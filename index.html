@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="fr" id="htmlRoot">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CAEER BTP — Bâtiment & Travaux Publics au Cameroun</title>
+<meta name="description" content="CAEER BTP, entreprise de bâtiment et travaux publics au Cameroun.">
+<meta name="theme-color" content="#1B4FD8">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["Organization","LocalBusiness"],"name":"CAEER BTP","slogan":"Chaque détail compte."}</script>
+<style>
+:root{--blue:#1B4FD8;--blue-d:#0F3AA8;--blue-l:#E8EEFF;--gold:#F5B301;--gold-d:#D99A00;--gold-l:#FFF6DF;--navy:#0B1F4D;--navy-2:#132B63;--ink:#12212e;--muted:#5c6d7c;--line:#e3e9ef;--bg:#fff;--bg-alt:#f6f8fc;--ok:#1e8e5a;--err:#c0392b;--r:14px;--r-sm:9px;--sh:0 10px 30px rgba(11,31,77,.08);--sh-lg:0 24px 60px rgba(11,31,77,.16);--max:1200px;--font:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+h1,h2,h3,h4{line-height:1.2;margin:0 0 .5em;font-weight:800;letter-spacing:-.02em}
+h1{font-size:clamp(1.9rem,5vw,3.2rem)}
+h2{font-size:clamp(1.5rem,3.4vw,2.2rem)}
+h3{font-size:clamp(1.1rem,2vw,1.35rem)}
+p{margin:0 0 1em}
+.wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:20px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:absolute;left:-999px;top:0;background:var(--gold);color:var(--navy);padding:12px 18px;z-index:999;border-radius:0 0 8px 0;font-weight:800}
+.skip:focus{left:0}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;padding:.85em 1.5em;border-radius:999px;border:2px solid transparent;font-weight:700;font-size:.95rem;cursor:pointer;transition:.2s;text-align:center;white-space:nowrap;font-family:inherit}
+.btn-primary{background:var(--gold);color:var(--navy)}
+.btn-primary:hover{background:var(--gold-d);transform:translateY(-2px);box-shadow:0 8px 20px rgba(245,179,1,.4)}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-blue:hover{background:var(--blue-d);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.btn-ghost:hover{background:rgba(255,255,255,.14);border-color:#fff}
+.btn-outline{background:#fff;color:var(--navy);border-color:var(--line)}
+.btn-outline:hover{border-color:var(--blue);color:var(--blue);background:var(--blue-l)}
+.btn-danger{background:var(--err);color:#fff}
+.btn-danger:hover{background:#a02d21}
+.btn-sm{padding:.5em 1em;font-size:.85rem}
+.btn-block{width:100%}
+.btn[disabled]{opacity:.55;cursor:not-allowed}
+.topbar{background:var(--navy);color:#cfe0ee;font-size:.82rem}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:40px;flex-wrap:wrap}
+.topbar a:hover{color:var(--gold)}
+.topbar .tb-right{display:flex;align-items:center;gap:18px}
+header.site{position:sticky;top:0;z-index:120;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;gap:18px;min-height:80px}
+.brand{display:flex;align-items:center;gap:12px;flex:0 0 auto}
+.brand-icon{width:56px;height:44px;flex:0 0 auto;display:block}
+.brand-text{display:flex;flex-direction:column;line-height:1}
+.brand-name{display:flex;align-items:baseline;gap:5px;font-size:1.35rem;font-weight:900;letter-spacing:-.04em}
+.brand-name b{color:var(--blue)}
+.brand-name i{color:var(--gold);font-style:normal}
+.brand-slogan{font-size:.66rem;font-weight:600;color:var(--blue);margin-top:2px;opacity:.85}
+nav.main{margin-left:auto}
+nav.main ul{display:flex;gap:2px;list-style:none;margin:0;padding:0}
+nav.main a{display:block;padding:.55em .75em;border-radius:8px;font-size:.88rem;font-weight:600;color:#2a3d4e}
+nav.main a:hover{background:var(--blue-l);color:var(--blue)}
+nav.main a.active{color:var(--blue);background:var(--blue-l)}
+.head-actions{display:flex;align-items:center;gap:10px}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:#fff}
+.lang button{border:0;background:transparent;padding:.35em .75em;font-size:.78rem;font-weight:800;cursor:pointer;color:var(--muted)}
+.lang button[aria-pressed="true"]{background:var(--blue);color:#fff}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:9px;padding:.45em .6em;cursor:pointer}
+.burger span{display:block;width:22px;height:2px;background:var(--navy);margin:4px 0;border-radius:2px;transition:.25s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+@media (max-width:1080px){.burger{display:block;order:3}
+nav.main{position:fixed;inset:80px 0 auto 0;background:#fff;border-bottom:1px solid var(--line);max-height:0;overflow:hidden;transition:max-height .3s;box-shadow:var(--sh)}
+nav.main.open{max-height:80vh;overflow:auto}
+nav.main ul{flex-direction:column;padding:12px 20px 20px}
+nav.main a{padding:.85em 1em;font-size:1rem}
+.head-actions .btn-quote{display:none}
+.topbar .tb-right .hide-sm{display:none}}
+@media (max-width:640px){.topbar{font-size:.75rem}.brand-slogan{font-size:.58rem}}
+.hero{position:relative;color:#fff;overflow:hidden;background:linear-gradient(115deg,rgba(6,18,45,.97),rgba(11,31,77,.92) 45%,rgba(27,79,216,.55)),repeating-linear-gradient(45deg,rgba(255,255,255,.045) 0 2px,transparent 2px 22px)}
+.hero .wrap{position:relative;z-index:2;padding-block:clamp(56px,10vw,120px)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr;gap:32px}}
+.pill{display:inline-flex;align-items:center;gap:.5em;background:rgba(245,179,1,.16);border:1px solid rgba(245,179,1,.55);color:#FFD873;padding:.42em 1em;border-radius:999px;font-size:.78rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px}
+.hero h1{color:#fff;max-width:16ch}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero-slogan{display:inline-block;font-size:.95rem;font-weight:700;color:var(--gold);margin:-8px 0 16px}
+.hero p.lead{font-size:clamp(1rem,1.6vw,1.16rem);color:#c2d4e2;max-width:56ch}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.hero-facts{display:flex;gap:34px;flex-wrap:wrap;margin-top:44px;padding-top:28px;border-top:1px solid rgba(255,255,255,.16)}
+.hero-facts b{display:block;font-size:1.9rem;color:#fff;font-weight:900}
+.hero-facts b .suf{color:var(--gold)}
+.hero-facts span{font-size:.82rem;color:#9fb6c8;text-transform:uppercase;letter-spacing:.08em}
+.hero-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:26px}
+.hero-card h3{color:#fff;font-size:1rem}
+.hero-card ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.hero-card li{display:flex;gap:11px;font-size:.92rem;color:#d5e3ee}
+.hero-card li::before{content:"✓";color:var(--gold);font-weight:900}
+.quickbar{background:var(--gold);color:var(--navy)}
+.quickbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-block:14px;flex-wrap:wrap}
+.quickbar strong{font-size:1rem;font-weight:800}
+.quickbar .qb-links{display:flex;gap:10px;flex-wrap:wrap}
+.quickbar a.qb{display:inline-flex;align-items:center;gap:.5em;background:rgba(11,31,77,.1);border:1px solid rgba(11,31,77,.25);color:var(--navy);padding:.5em 1.05em;border-radius:999px;font-weight:700;font-size:.88rem}
+.quickbar a.qb:hover{background:var(--navy);color:#fff}
+section.block{padding-block:clamp(52px,7vw,92px)}
+section.alt{background:var(--bg-alt)}
+.sec-head{max-width:720px;margin-bottom:42px}
+.sec-head.center{margin-inline:auto;text-align:center}
+.eyebrow{display:inline-block;font-size:.76rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:10px;position:relative;padding-left:26px}
+.eyebrow::before{content:"";position:absolute;left:0;top:50%;width:18px;height:3px;background:var(--gold);border-radius:2px}
+.sec-head.center .eyebrow{padding-left:0}
+.sec-head.center .eyebrow::before{display:none}
+.sec-head p{color:var(--muted);font-size:1.03rem;margin:0}
+.grid{display:grid;gap:24px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+@media (max-width:1000px){.g3,.g4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:660px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:.25s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--sh-lg);border-color:#cddae4}
+.card-body{padding:22px;display:flex;flex-direction:column;flex:1}
+.card h3 a:hover{color:var(--blue)}
+.card p{color:var(--muted);font-size:.94rem;flex:1}
+.card .more{color:var(--blue);font-weight:800;font-size:.88rem;display:inline-flex;gap:.4em;margin-top:8px}
+.card .more:hover{gap:.7em;color:var(--gold-d)}
+.ph{aspect-ratio:16/10;position:relative;display:grid;place-items:center;overflow:hidden;background:repeating-linear-gradient(45deg,rgba(255,255,255,.07) 0 2px,transparent 2px 16px),linear-gradient(140deg,var(--blue),var(--navy));color:#a9c0e8;font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-align:center;padding:12px}
+.ph span{position:relative;z-index:2;opacity:.85}
+.ph.gold{background:repeating-linear-gradient(45deg,rgba(11,31,77,.08) 0 2px,transparent 2px 16px),linear-gradient(140deg,var(--gold),var(--gold-d));color:var(--navy)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+@media (max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px 22px;text-align:center}
+.stat b{display:block;font-size:clamp(2rem,4vw,2.7rem);font-weight:900;color:var(--blue);letter-spacing:-.04em;line-height:1}
+.stat b .suf{color:var(--gold)}
+.stat span{display:block;margin-top:8px;font-size:.86rem;color:var(--muted);font-weight:600}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:30px;align-items:center}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:.5em 1.1em;font-size:.86rem;font-weight:700;color:var(--muted);cursor:pointer;transition:.2s;font-family:inherit}
+.chip:hover{border-color:var(--blue);color:var(--blue)}
+.chip[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+select.filter{border:1px solid var(--line);border-radius:999px;padding:.5em 1em;font-size:.86rem;font-weight:600;background:#fff;cursor:pointer}
+.badge{display:inline-block;padding:.25em .75em;border-radius:999px;font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.badge-live{background:#e6f6ee;color:var(--ok)}
+.badge-done{background:var(--blue-l);color:var(--blue-d)}
+.badge-cat{background:var(--gold-l);color:var(--gold-d)}
+.meta{display:flex;gap:14px;flex-wrap:wrap;font-size:.82rem;color:var(--muted);margin-bottom:10px}
+.logos{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+@media (max-width:900px){.logos{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:520px){.logos{grid-template-columns:repeat(2,1fr)}}
+.logo-box{aspect-ratio:3/2;display:grid;place-items:center;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center;font-weight:800;font-size:.8rem;color:#7b8c9b;transition:.2s}
+.logo-box:hover{border-color:var(--gold);color:var(--navy);transform:translateY(-3px)}
+.quote{background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:var(--r);padding:24px}
+.quote p{font-style:italic;color:#33475a}
+.quote footer{font-size:.86rem;font-weight:800;color:var(--blue)}
+.quote footer span{display:block;font-weight:500;color:var(--muted)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media (max-width:660px){.form-grid{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column;gap:6px}
+.field.full{grid-column:1/-1}
+.field label{font-size:.86rem;font-weight:700;color:#2a3d4e}
+.field label .req{color:var(--err)}
+.field input,.field select,.field textarea{border:1px solid var(--line);border-radius:var(--r-sm);padding:.8em .95em;background:#fff;font-size:.94rem;transition:.18s;width:100%;font-family:inherit}
+.field textarea{min-height:130px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(27,79,216,.14);outline:none}
+.field .err{font-size:.78rem;color:var(--err);font-weight:700;display:none}
+.field.invalid input,.field.invalid select,.field.invalid textarea{border-color:var(--err);background:#fff7f6}
+.field.invalid .err{display:block}
+.file-drop{border:2px dashed var(--line);border-radius:var(--r-sm);padding:20px;text-align:center;background:var(--bg-alt);cursor:pointer;font-size:.88rem;color:var(--muted);transition:.2s}
+.file-drop:hover,.file-drop.drag{border-color:var(--blue);background:var(--blue-l);color:var(--blue)}
+.file-list{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}
+.file-list li{display:flex;justify-content:space-between;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:.55em .85em;font-size:.84rem}
+.file-list button{border:0;background:none;color:var(--err);cursor:pointer;font-weight:800}
+.captcha{display:flex;align-items:center;gap:12px;background:var(--bg-alt);border:1px solid var(--line);border-radius:var(--r-sm);padding:14px 16px;font-size:.9rem;font-weight:600;flex-wrap:wrap}
+.captcha input{width:80px;text-align:center;border:1px solid var(--line);border-radius:7px;padding:.5em}
+.hp{position:absolute!important;left:-9999px!important;opacity:0!important;height:0!important}
+.alert{border-radius:var(--r-sm);padding:16px 18px;font-size:.92rem;margin-bottom:20px;border:1px solid}
+.alert-ok{background:#eefaf3;border-color:#bfe7d1;color:#14603d}
+.alert-err{background:#fdf2f1;border-color:#f2c9c4;color:#8f2a1e}
+.alert-info{background:var(--blue-l);border-color:#c9d9f8;color:var(--blue-d)}
+.alert-warn{background:#fff8ef;border-color:#f0dfb0;color:#7a5a00}
+.article-body{max-width:760px;margin-inline:auto}
+.article-body h2{margin-top:1.6em;font-size:1.5rem;color:var(--blue)}
+.article-body blockquote{border-left:4px solid var(--gold);margin:1.5em 0;padding:.6em 1.2em;background:var(--bg-alt);font-style:italic;color:#33475a}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
+.tag{background:var(--bg-alt);border:1px solid var(--line);border-radius:999px;padding:.3em .85em;font-size:.78rem;font-weight:700;color:var(--muted)}
+.share{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px;padding-top:22px;border-top:1px solid var(--line);align-items:center}
+.share b{font-size:.86rem;color:var(--muted)}
+.share a{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--bg-alt);border:1px solid var(--line);font-size:.78rem;font-weight:900;color:var(--navy);transition:.2s}
+.share a:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
+.crumb{font-size:.83rem;color:var(--muted);padding-block:16px}
+.crumb a:hover{color:var(--blue)}
+.crumb span{opacity:.5;margin-inline:7px}
+.pagehead{background:linear-gradient(120deg,var(--navy),var(--blue));color:#fff;padding-block:clamp(38px,6vw,72px);position:relative;overflow:hidden}
+.pagehead::after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(45deg,rgba(255,255,255,.04) 0 2px,transparent 2px 20px)}
+.pagehead .wrap{position:relative;z-index:2}
+.pagehead h1{color:#fff;margin-bottom:.3em}
+.pagehead p{color:#c2d4e2;max-width:70ch;margin:0}
+.lightbox{position:fixed;inset:0;background:rgba(6,16,40,.96);z-index:400;display:none;place-items:center;padding:24px}
+.lightbox.open{display:grid}
+.lightbox .lb-inner{max-width:1000px;width:100%;text-align:center;color:#fff}
+.lightbox .lb-img{aspect-ratio:16/10;border-radius:var(--r);display:grid;place-items:center;background:linear-gradient(140deg,var(--blue),var(--navy));color:#a9c0e8;font-weight:700;text-transform:uppercase;font-size:.85rem}
+.lightbox .lb-close{position:absolute;top:18px;right:18px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);color:#fff;width:44px;height:44px;border-radius:50%;font-size:1.3rem;cursor:pointer}
+.chat-fab{position:fixed;right:20px;bottom:20px;z-index:300;width:60px;height:60px;border-radius:50%;background:var(--blue);color:#fff;border:0;cursor:pointer;font-size:1.5rem;box-shadow:0 10px 28px rgba(27,79,216,.45);display:grid;place-items:center;transition:.25s}
+.chat-fab:hover{transform:scale(1.07);background:var(--blue-d)}
+.chat-fab .dot{position:absolute;top:8px;right:8px;width:14px;height:14px;background:var(--gold);border:2px solid #fff;border-radius:50%}
+.chat-panel{position:fixed;right:20px;bottom:92px;z-index:301;width:min(390px,calc(100vw - 40px));height:min(600px,calc(100vh - 130px));background:#fff;border-radius:18px;box-shadow:var(--sh-lg);border:1px solid var(--line);display:none;flex-direction:column;overflow:hidden}
+.chat-panel.open{display:flex}
+.chat-head{background:var(--navy);color:#fff;padding:16px 18px;display:flex;align-items:center;gap:12px}
+.chat-head .av{width:42px;height:42px;border-radius:50%;background:#fff;display:grid;place-items:center;padding:4px}
+.chat-head b{display:block;font-size:.95rem}
+.chat-head small{color:#a9c0d2;font-size:.74rem;display:flex;align-items:center;gap:6px}
+.chat-head small::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.chat-head button{margin-left:auto;background:none;border:0;color:#fff;font-size:1.3rem;cursor:pointer}
+.chat-note{background:var(--gold-l);border-bottom:1px solid #f0e0b0;color:#7a5a00;font-size:.72rem;padding:8px 16px;text-align:center;font-weight:600}
+.chat-log{flex:1;overflow-y:auto;padding:18px;display:flex;flex-direction:column;gap:12px;background:var(--bg-alt)}
+.msg{max-width:86%;padding:11px 15px;border-radius:16px;font-size:.9rem;line-height:1.55}
+.msg.bot{background:#fff;border:1px solid var(--line);border-bottom-left-radius:5px;align-self:flex-start}
+.msg.user{background:var(--blue);color:#fff;border-bottom-right-radius:5px;align-self:flex-end}
+.msg a{color:var(--blue);font-weight:700;text-decoration:underline}
+.chat-quick{display:flex;gap:7px;flex-wrap:wrap;padding:0 18px 12px;background:var(--bg-alt)}
+.chat-quick button{background:#fff;border:1px solid var(--line);border-radius:999px;padding:.4em .85em;font-size:.78rem;font-weight:700;cursor:pointer;color:var(--blue-d);font-family:inherit}
+.chat-quick button:hover{background:var(--blue);color:#fff}
+.chat-input{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line);background:#fff}
+.chat-input input{flex:1;border:1px solid var(--line);border-radius:999px;padding:.7em 1.1em;font-size:.9rem}
+.chat-input button{width:44px;height:44px;border-radius:50%;border:0;background:var(--blue);color:#fff;cursor:pointer;font-size:1.05rem}
+/* ADMIN */
+.admin-shell{display:grid;grid-template-columns:260px 1fr;min-height:70vh}
+@media (max-width:900px){.admin-shell{grid-template-columns:1fr}}
+.admin-side{background:var(--navy);color:#cfe0ee;padding:24px 0}
+.admin-side h3{color:#fff;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;padding-inline:22px;opacity:.6;margin-bottom:12px;margin-top:18px}
+.admin-side button{display:block;width:100%;text-align:left;background:none;border:0;color:#cfe0ee;padding:.75em 22px;font-size:.9rem;font-weight:600;cursor:pointer;border-left:3px solid transparent;transition:.15s;font-family:inherit}
+.admin-side button:hover{background:rgba(255,255,255,.07);color:#fff}
+.admin-side button.active{background:rgba(245,179,1,.16);border-left-color:var(--gold);color:#fff}
+.admin-main{padding:28px;background:var(--bg-alt);min-height:60vh}
+.admin-bar{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+.admin-bar h2{margin:0}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:26px}
+@media (max-width:800px){.kpis{grid-template-columns:repeat(2,1fr)}}
+.kpi{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.kpi b{display:block;font-size:2rem;font-weight:900;color:var(--blue);letter-spacing:-.03em;line-height:1.1}
+.kpi span{font-size:.82rem;color:var(--muted);font-weight:600}
+.panel{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px;margin-bottom:22px}
+.panel h3{margin-top:0}
+table.tbl{width:100%;border-collapse:collapse;font-size:.88rem}
+table.tbl th{text-align:left;padding:11px 12px;border-bottom:2px solid var(--line);font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+table.tbl td{padding:12px;border-bottom:1px solid var(--line);vertical-align:middle}
+table.tbl tr:hover td{background:var(--bg-alt)}
+.tbl-actions{display:flex;gap:8px;flex-wrap:wrap}
+.tbl-actions button{border:1px solid var(--line);background:#fff;border-radius:7px;padding:.32em .7em;font-size:.78rem;font-weight:700;cursor:pointer;font-family:inherit}
+.tbl-actions button:hover{border-color:var(--blue);color:var(--blue)}
+.tbl-actions button.del:hover{border-color:var(--err);color:var(--err)}
+.tbl-actions button.move{border-color:#c9d9f8;color:var(--blue-d)}
+.login-box{max-width:420px;margin:60px auto;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:32px;box-shadow:var(--sh)}
+.login-logo{display:flex;flex-direction:column;align-items:center;margin-bottom:22px}
+.wysiwyg{border:1px solid var(--line);border-radius:var(--r-sm);overflow:hidden}
+.wysiwyg .toolbar{display:flex;gap:4px;padding:8px;background:var(--bg-alt);border-bottom:1px solid var(--line);flex-wrap:wrap}
+.wysiwyg .toolbar button{border:1px solid var(--line);background:#fff;border-radius:6px;min-width:34px;height:32px;cursor:pointer;font-weight:800;font-size:.85rem;padding:0 8px}
+.wysiwyg .toolbar button:hover{background:var(--blue);color:#fff}
+.wysiwyg .editor{min-height:190px;padding:14px;background:#fff;font-size:.94rem;max-height:500px;overflow-y:auto}
+.wysiwyg .editor:focus{outline:none}
+.saveflag{font-size:.78rem;color:var(--ok);font-weight:700;display:inline-flex;align-items:center;gap:6px}
+.saveflag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ok)}
+.img-uploader{border:2px dashed var(--line);border-radius:var(--r-sm);padding:14px;text-align:center;background:var(--bg-alt);cursor:pointer;font-size:.85rem;color:var(--muted);transition:.2s;position:relative}
+.img-uploader:hover{border-color:var(--blue);background:var(--blue-l);color:var(--blue)}
+.img-uploader img{max-height:120px;margin:8px auto 0;border-radius:6px}
+.img-uploader input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.modal-overlay{position:fixed;inset:0;background:rgba(6,16,40,.7);z-index:500;display:none;align-items:center;justify-content:center;padding:20px;overflow-y:auto}
+.modal-overlay.open{display:flex}
+.modal{background:#fff;border-radius:var(--r);max-width:800px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:var(--sh-lg)}
+.modal-head{padding:20px 24px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:#fff;z-index:2}
+.modal-head h3{margin:0}
+.modal-head button{background:none;border:0;font-size:1.4rem;cursor:pointer;color:var(--muted)}
+.modal-body{padding:24px}
+.modal-foot{padding:18px 24px;border-top:1px solid var(--line);display:flex;justify-content:flex-end;gap:10px;position:sticky;bottom:0;background:#fff}
+.cookies{position:fixed;left:0;right:0;bottom:0;z-index:350;background:#fff;border-top:1px solid var(--line);box-shadow:0 -8px 30px rgba(11,31,77,.1);padding:18px 20px;display:none}
+.cookies.show{display:block}
+.cookies .wrap{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.cookies p{margin:0;font-size:.86rem;color:var(--muted);max-width:70ch}
+.cookies .ck-act{display:flex;gap:10px;flex-wrap:wrap}
+footer.site{background:var(--navy);color:#a9c0d2;padding-top:64px}
+footer.site h4{color:#fff;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px}
+footer.site a{font-size:.9rem;display:block;padding:.3em 0;transition:.2s}
+footer.site a:hover{color:var(--gold)}
+.f-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:38px;padding-bottom:44px}
+@media (max-width:900px){.f-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.f-grid{grid-template-columns:1fr}}
+.f-bottom{border-top:1px solid rgba(255,255,255,.12);padding-block:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.82rem}
+.f-bottom a{display:inline;padding:0}
+.f-brand{margin-bottom:16px}
+.f-brand .brand-name b{color:#fff}
+.f-contact li{list-style:none;display:flex;gap:10px;margin-bottom:10px;font-size:.9rem}
+.f-contact{margin:0;padding:0}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+@media (max-width:900px){.two-col{grid-template-columns:1fr;gap:32px}}
+.checklist{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.checklist li{display:flex;gap:12px;font-size:.95rem}
+.checklist li::before{content:"✓";flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--gold-l);color:var(--gold-d);display:grid;place-items:center;font-weight:900;font-size:.8rem;margin-top:2px}
+.map-embed{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);aspect-ratio:16/9;background:var(--bg-alt)}
+.map-embed iframe{width:100%;height:100%;border:0;display:block}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu principal</a>
+<div class="topbar"><div class="wrap"><span id="tbTagline">Bâtiment &amp; Travaux Publics — Cameroun</span>
+<div class="tb-right"><span class="hide-sm">📞 <a id="tbPhone" href="#">—</a></span><span class="hide-sm">✉️ <a id="tbEmail" href="#">—</a></span><a href="#/fr/admin">Espace admin</a></div></div></div>
+<header class="site"><div class="wrap">
+<a class="brand" href="#/fr"><svg class="brand-icon" viewBox="0 0 90 70"><g fill="#F5B301"><path d="M5 64V36h10v-10h11v38z"/><rect x="10" y="43" width="7" height="7" fill="#fff" opacity=".92"/><rect x="40" y="14" width="5" height="50"/><path d="M45 14 78 4v4.5L48 17z"/><path d="M67 19c0 6 4.5 9 8.5 6.5" fill="none" stroke="#F5B301" stroke-width="2.6" stroke-linecap="round"/><path d="M48 64 68 48l20 16h-7l-13-10.5L55 64z"/></g></svg>
+<span class="brand-text"><span class="brand-name"><b>CAEER</b><i>BTP</i></span><span class="brand-slogan" id="brandSlogan">Chaque détail compte.</span></span></a>
+<nav class="main" id="mainNav"><ul id="navList"></ul></nav>
+<div class="head-actions"><div class="lang"><button data-lang="fr" aria-pressed="true">FR</button><button data-lang="en" aria-pressed="false">EN</button></div>
+<a class="btn btn-primary btn-sm btn-quote" href="#/fr/devis">Demander un devis</a>
+<button class="burger" id="burger" aria-expanded="false"><span></span><span></span><span></span></button></div></div></header>
+<main id="main"></main>
+<footer class="site"><div class="wrap"><div class="f-grid">
+<div><div class="f-brand"><span class="brand-name" style="font-size:1.4rem"><b>CAEER</b><i>BTP</i></span><div style="color:#F5B301;font-size:.72rem;font-weight:700;margin-top:2px" id="footSlogan">Chaque détail compte.</div></div>
+<p id="footAbout" style="font-size:.9rem"></p><p style="font-size:.82rem;opacity:.75" id="footLegalIds"></p></div>
+<div><h4>Navigation</h4><div id="footNav"></div></div>
+<div><h4>Nos services</h4><div id="footServices"></div></div>
+<div><h4>Contact</h4><ul class="f-contact" id="footContact"></ul></div>
+</div><div class="f-bottom"><span>© <span id="year"></span> CAEER BTP. Tous droits réservés.</span>
+<span><a href="#/fr/mentions-legales">Mentions légales</a> · <a href="#/fr/confidentialite">Confidentialité</a> · <a href="#/fr/cookies">Cookies</a></span></div></div></footer>
+<button class="chat-fab" id="chatFab" aria-label="Ouvrir l'assistant">💬<span class="dot"></span></button>
+<div class="chat-panel" id="chatPanel"><div class="chat-head"><span class="av"><svg viewBox="0 0 90 70"><g fill="#F5B301"><path d="M5 64V36h10v-10h11v38z"/><rect x="40" y="14" width="5" height="50"/><path d="M45 14 78 4v4.5L48 17z"/></g></svg></span><div><b>Assistant CAEER BTP</b><small>En ligne — réponse immédiate</small></div><button id="chatClose">×</button></div>
+<div class="chat-note">⚠️ Assistant automatique</div>
+<div class="chat-log" id="chatLog"></div>
+<div class="chat-quick" id="chatQuick"></div>
+<form class="chat-input" id="chatForm"><input id="chatInput" type="text" placeholder="Écrivez votre question…"><button>➤</button></form></div>
+<div class="lightbox" id="lightbox"><button class="lb-close" id="lbClose">×</button><div class="lb-inner"><div class="lb-img" id="lbImg">Photo</div><p id="lbCap" style="margin-top:14px;color:#cfe0ee"></p></div></div>
+<div class="cookies" id="cookieBar"><div class="wrap"><p>Nous utilisons des cookies pour assurer le bon fonctionnement du site et mesurer son audience.</p><div class="ck-act"><button class="btn btn-outline btn-sm" id="ckRefuse">Refuser</button><button class="btn btn-primary btn-sm" id="ckAccept">Accepter</button></div></div></div>
+<div class="modal-overlay" id="modalOverlay"><div class="modal" id="modalContent"></div></div>
+
+<script>
+/* ==========================================================================
+   CAEER BTP — Site éditable depuis l'interface
+   Toutes les données sont dans DB (localStorage) — modifiables via l'admin.
+   ========================================================================== */
+
+/* ---------- TRADUCTIONS ---------- */
+const I18N = {
+  fr:{'brand.slogan':'Chaque détail compte.','nav.home':'Accueil','nav.about':"L'entreprise",'nav.services':'Services','nav.projects':'Réalisations','nav.refs':'Références','nav.news':'Actualités','nav.blog':'Articles','nav.contact':'Contact','nav.quote':'Demander un devis',
+  'hero.cta1':'Demander un devis','hero.cta2':'Voir nos réalisations','hero.card.title':'Pourquoi nous confier votre projet',
+  'quick.title':'Un projet en tête ? Parlons-en.','quick.call':'Appeler','quick.wa':'WhatsApp','quick.quote':'Devis en ligne',
+  'home.services.eyebrow':'Nos métiers','home.services.title':'Des solutions complètes','home.services.lead':'De la fondation à la finition, nous prenons en charge votre projet.','home.services.all':'Tous nos services',
+  'home.stats.eyebrow':'En chiffres','home.stats.title':'Des résultats mesurables','home.stats.lead':'Chiffres indicatifs.',
+  'home.projects.eyebrow':'Réalisations','home.projects.title':'Quelques projets récents','home.projects.all':'Toutes nos réalisations',
+  'home.partners.eyebrow':'Partenaires','home.partners.title':'Ils nous font confiance',
+  'home.news.eyebrow':'Actualités','home.news.title':'La vie de l’entreprise','home.news.all':'Toutes les actualités',
+  'home.testi.eyebrow':'Témoignages','home.testi.title':'Ce que disent nos clients',
+  'common.readmore':'En savoir plus','common.back':'← Retour','common.client':'Client','common.place':'Lieu','common.year':'Année','common.status':'Statut','common.delivered':'Livré','common.ongoing':'En cours','common.all':'Tous','common.share':'Partager :','common.related':'Articles associés','common.published':'Publié le','common.by':'par','common.notfound':'Page introuvable','common.home':'Retour à l’accueil','common.zoom':'Cliquez pour agrandir','common.photo':'Photo — CAEER BTP',
+  'about.title':"L'entreprise",'about.history.t':'Notre histoire','about.mission.t':'Notre mission','about.vision.t':'Notre vision','about.values.t':'Nos valeurs','about.team.t':'Organisation & équipe','about.means.t':'Moyens','about.qse.t':'Engagements QSE','about.certs.t':'Certifications',
+  'services.title':'Nos services','services.lead':'Nos domaines d’expertise.','services.assets':'Nos atouts','services.other':'Nos autres services','services.detail':'Détail',
+  'projects.title':'Nos réalisations','projects.lead':'Une sélection de projets livrés et en cours.','projects.empty':'Aucun projet.',
+  'refs.title':'Références & partenaires','refs.lead':'Ils nous font confiance.','refs.testi':'Ils témoignent',
+  'news.title':'Actualités','news.lead':'Chantiers, distinctions, vie de l’entreprise.',
+  'blog.title':'Articles & conseils','blog.lead':'Conseils, réglementation, matériaux.',
+  'quote.title':'Demande de devis','quote.lead':'Décrivez votre projet.',
+  'quote.f.name':'Nom et prénom','quote.f.company':'Entreprise (optionnel)','quote.f.phone':'Téléphone','quote.f.email':'E-mail','quote.f.type':'Type de projet','quote.f.place':'Localisation','quote.f.budget':'Budget estimatif (optionnel)','quote.f.desc':'Description du projet','quote.f.files':'Pièces jointes (PDF, JPG, PNG · 5 Mo max · 3 fichiers)','quote.f.desc.ph':'Décrivez votre projet…','quote.f.required':'Champ obligatoire','quote.f.emailerr':'E-mail invalide','quote.f.phoneerr':'Téléphone invalide','quote.captcha':'Anti-spam — combien font','quote.captcha.err':'Réponse incorrecte.','quote.submit':'Envoyer ma demande','quote.sending':'Envoi…','quote.ok':'Merci ! Votre demande a bien été enregistrée. Notre équipe vous répond sous 48 h ouvrées.','quote.again':'Envoyer une autre demande','quote.types.0':'Sélectionnez…','quote.types.1':'Construction de bâtiment','quote.types.2':'Travaux publics','quote.types.3':'VRD','quote.types.4':'Génie civil','quote.types.5':'Réhabilitation','quote.types.6':'Autre','quote.side.t':'Comment ça se passe ?','quote.side.1':'Vous envoyez votre demande.','quote.side.2':'Nous analysons le besoin.','quote.side.3':'Vous recevez une proposition.','quote.side.4':'Nous démarrons le chantier.','quote.side.note':'Vos informations restent confidentielles.',
+  'contact.title':'Contact','contact.lead':'Nous sommes à votre écoute.','contact.phone':'Téléphone','contact.email':'E-mail','contact.address':'Adresse','contact.hours':'Horaires','contact.wa':'Discuter sur WhatsApp','contact.wa.msg':'Bonjour CAEER BTP, je souhaite des informations.','contact.form.t':'Envoyez-nous un message','contact.f.name':'Votre nom','contact.f.email':'Votre e-mail','contact.f.phone':'Votre téléphone','contact.f.subject':'Objet','contact.f.msg':'Votre message','contact.submit':'Envoyer','contact.ok':'Merci, votre message a bien été envoyé.','contact.map':'Nous trouver',
+  'chat.title':'Assistant CAEER BTP','chat.hello':"Bonjour 👋 Je suis l'assistant de CAEER BTP. Posez-moi vos questions.",'chat.fallback':"Je n'ai pas la réponse. Contactez-nous :",'chat.contact.capture':'Laissez vos coordonnées pour être rappelé.',
+  'footer.about':'Entreprise de BTP au Cameroun.','footer.legalids':'RCCM / NIU : à compléter','footer.nav':'Navigation','footer.services':'Nos services','footer.contact':'Contact','footer.hours':'Lun–Ven 7h30–17h30 · Sam 8h–13h','footer.rights':'Tous droits réservés.',
+  'admin.title':'Back-office','admin.login':'Connexion','admin.user':'Identifiant','admin.pass':'Mot de passe','admin.signin':'Se connecter','admin.logout':'Déconnexion','admin.err':'Identifiant ou mot de passe incorrect.','admin.dash':'Tableau de bord','admin.quotes':'Demandes de devis','admin.messages':'Messages','admin.texts':'Textes & identité','admin.services':'Services','admin.projects':'Réalisations','admin.news':'Actualités','admin.articles':'Articles','admin.partners':'Partenaires','admin.testi':'Témoignages','admin.stats':'Chiffres clés','admin.legal':'Mentions légales','admin.backup':'Sauvegarde','admin.users':'Utilisateurs','admin.add':'＋ Ajouter','admin.edit':'Modifier','admin.del':'Supprimer','admin.save':'Enregistrer','admin.cancel':'Annuler','admin.export':'Exporter JSON','admin.import':'Importer JSON','admin.download':'📥 Télécharger le site final','admin.reset':'↺ Réinitialiser aux données d’origine','admin.noquotes':'Aucune demande.','admin.confirm':'Confirmer la suppression ?','admin.saved':'Enregistré.','admin.kpi.quotes':'Demandes','admin.kpi.projects':'Réalisations','admin.kpi.articles':'Articles','admin.kpi.news':'Actualités','admin.files':'Fichiers','admin.image':'Image','admin.upload':'Changer l’image','admin.remove':'Retirer l’image','admin.moveUp':'↑','admin.moveDown':'↓'
+  },
+  en:{'brand.slogan':'Every detail counts.','nav.home':'Home','nav.about':'Company','nav.services':'Services','nav.projects':'Projects','nav.refs':'References','nav.news':'News','nav.blog':'Blog','nav.contact':'Contact','nav.quote':'Request a quote',
+  'hero.cta1':'Request a quote','hero.cta2':'See our projects','hero.card.title':'Why choose us',
+  'quick.title':'Got a project?','quick.call':'Call us','quick.wa':'WhatsApp','quick.quote':'Online quote',
+  'home.services.eyebrow':'Our expertise','home.services.title':'Complete solutions','home.services.lead':'From foundations to finishing.','home.services.all':'All services',
+  'home.stats.eyebrow':'In figures','home.stats.title':'Measurable results','home.stats.lead':'Indicative figures.',
+  'home.projects.eyebrow':'Projects','home.projects.title':'Recent projects','home.projects.all':'All projects',
+  'home.partners.eyebrow':'Partners','home.partners.title':'They trust us',
+  'home.news.eyebrow':'News','home.news.title':'Company life','home.news.all':'All news',
+  'home.testi.eyebrow':'Testimonials','home.testi.title':'What our clients say',
+  'common.readmore':'Learn more','common.back':'← Back','common.client':'Client','common.place':'Location','common.year':'Year','common.status':'Status','common.delivered':'Delivered','common.ongoing':'In progress','common.all':'All','common.share':'Share:','common.related':'Related','common.published':'Published on','common.by':'by','common.notfound':'Page not found','common.home':'Back to home','common.zoom':'Click to enlarge','common.photo':'Photo — CAEER BTP',
+  'about.title':'Company','about.history.t':'Our history','about.mission.t':'Our mission','about.vision.t':'Our vision','about.values.t':'Our values','about.team.t':'Organisation & team','about.means.t':'Resources','about.qse.t':'QSE commitments','about.certs.t':'Certifications',
+  'services.title':'Our services','services.lead':'Our areas of expertise.','services.assets':'Our strengths','services.other':'Other services','services.detail':'Details',
+  'projects.title':'Our projects','projects.lead':'Selection of projects.','projects.empty':'No project.',
+  'refs.title':'References & partners','refs.lead':'They trust us.','refs.testi':'Testimonials',
+  'news.title':'News','news.lead':'Sites, awards and company life.',
+  'blog.title':'Articles & advice','blog.lead':'Advice, regulations, materials.',
+  'quote.title':'Request a quote','quote.lead':'Describe your project.',
+  'quote.f.name':'Full name','quote.f.company':'Company (optional)','quote.f.phone':'Phone','quote.f.email':'Email','quote.f.type':'Project type','quote.f.place':'Location','quote.f.budget':'Estimated budget','quote.f.desc':'Description','quote.f.files':'Attachments (PDF, JPG, PNG · 5 MB · 3 files)','quote.f.desc.ph':'Describe your project…','quote.f.required':'Required','quote.f.emailerr':'Invalid email','quote.f.phoneerr':'Invalid phone','quote.captcha':'Anti-spam — what is','quote.captcha.err':'Incorrect.','quote.submit':'Send','quote.sending':'Sending…','quote.ok':'Thank you! We will reply within 48 working hours.','quote.again':'Send another','quote.types.0':'Select…','quote.types.1':'Building','quote.types.2':'Public works','quote.types.3':'Roads & utilities','quote.types.4':'Civil engineering','quote.types.5':'Refurbishment','quote.types.6':'Other','quote.side.t':'How it works','quote.side.1':'You send your request.','quote.side.2':'We analyse.','quote.side.3':'You receive a proposal.','quote.side.4':'We start the works.','quote.side.note':'Your data stays confidential.',
+  'contact.title':'Contact','contact.lead':'We are available.','contact.phone':'Phone','contact.email':'Email','contact.address':'Address','contact.hours':'Hours','contact.wa':'Chat on WhatsApp','contact.wa.msg':'Hello CAEER BTP.','contact.form.t':'Send us a message','contact.f.name':'Your name','contact.f.email':'Your email','contact.f.phone':'Your phone','contact.f.subject':'Subject','contact.f.msg':'Your message','contact.submit':'Send','contact.ok':'Thank you, your message has been sent.','contact.map':'Find us',
+  'chat.title':'CAEER BTP Assistant','chat.hello':'Hello 👋 How can I help?','chat.fallback':'No answer. Contact us:','chat.contact.capture':'Leave your details.',
+  'footer.about':'Construction company in Cameroon.','footer.legalids':'RCCM / NIU: to complete','footer.nav':'Navigation','footer.services':'Services','footer.contact':'Contact','footer.hours':'Mon–Fri 7:30am–5:30pm · Sat 8am–1pm','footer.rights':'All rights reserved.',
+  'admin.title':'Back-office','admin.login':'Login','admin.user':'Username','admin.pass':'Password','admin.signin':'Sign in','admin.logout':'Log out','admin.err':'Wrong credentials.','admin.dash':'Dashboard','admin.quotes':'Quote requests','admin.messages':'Messages','admin.texts':'Texts & identity','admin.services':'Services','admin.projects':'Projects','admin.news':'News','admin.articles':'Articles','admin.partners':'Partners','admin.testi':'Testimonials','admin.stats':'Key figures','admin.legal':'Legal','admin.backup':'Backup','admin.users':'Users','admin.add':'＋ Add','admin.edit':'Edit','admin.del':'Delete','admin.save':'Save','admin.cancel':'Cancel','admin.export':'Export JSON','admin.import':'Import JSON','admin.download':'📥 Download final site','admin.reset':'↺ Reset to defaults','admin.noquotes':'No request.','admin.confirm':'Confirm deletion?','admin.saved':'Saved.','admin.kpi.quotes':'Requests','admin.kpi.projects':'Projects','admin.kpi.articles':'Articles','admin.kpi.news':'News','admin.files':'Files','admin.image':'Image','admin.upload':'Change image','admin.remove':'Remove image','admin.moveUp':'↑','admin.moveDown':'↓'
+  }
+};
+
+/* ---------- DONNÉES PAR DÉFAUT ---------- */
+const DEFAULT_DB = {
+  identity:{
+    company:'CAEER BTP', slogan:'Chaque détail compte.', tagline:'Bâtiment & Travaux Publics — Cameroun',
+    phone:'+237600000000', phoneDisplay:'+237 6 00 00 00 00', email:'contact@caeerbtp.cm', whatsapp:'237600000000',
+    address:'Douala — Cameroun', mapsQuery:'Douala, Cameroun', hours:'Lun–Ven 7h30–17h30 · Sam 8h–13h',
+    legalIds:'RCCM / NIU : à compléter', footerAbout:'Entreprise de bâtiment et travaux publics basée au Cameroun. Construction, travaux publics, VRD, génie civil et réhabilitation.'
+  },
+  hero:{
+    fr:{ pill:'Entreprise de BTP — Cameroun', title:'Nous construisons <em>durable</em>, nous livrons dans les délais.', lead:"CAEER BTP accompagne les maîtres d'ouvrage publics et privés dans leurs projets de construction, de travaux publics, de VRD, de génie civil et de réhabilitation, partout au Cameroun." },
+    en:{ pill:'Construction company — Cameroon', title:'We build <em>to last</em>, we deliver on time.', lead:'CAEER BTP supports public and private clients across Cameroon.' },
+    cards:{ fr:['Équipes et matériels propres, mobilisables rapidement','Respect des délais et des budgets','Qualité, sécurité et environnement','Interlocuteur unique du devis à la réception'],
+            en:['Our own crews and equipment','Deadlines and budgets respected','Quality, safety, environment','A single point of contact'] }
+  },
+  about:{
+    history:{fr:"CAEER BTP est née de la volonté d'apporter au Cameroun une entreprise de BTP rigoureuse, capable d'intervenir sur des projets publics comme privés avec le même niveau d'exigence.",en:'CAEER BTP was born from the desire to bring to Cameroon a rigorous construction company.'},
+    mission:{fr:"Réaliser des ouvrages de qualité, livrés dans les délais et les budgets convenus.",en:'To deliver quality structures, on time and within budget.'},
+    vision:{fr:"Devenir une référence de la construction en Afrique centrale.",en:'To become a construction reference in Central Africa.'},
+    team:{fr:"Équipe dirigeante expérimentée et encadrement de chantier présent au quotidien.",en:'Experienced management and daily site supervision.'},
+    means:{fr:"Équipes formées et parc matériel adapté aux chantiers de bâtiment et de travaux publics.",en:'Trained teams and equipment suited to building and public works.'},
+    certs:{fr:"Certifications, agréments et références administratives à fournir.",en:'Certifications and approvals to be provided.'},
+    values:{fr:[['Rigueur','Méthodes structurées, suivi rigoureux.'],['Sécurité','Protection non négociable.'],['Qualité','Matériaux conformes, finitions soignées.'],['Transparence','Communication claire.']],
+            en:[['Rigour','Structured methods.'],['Safety','Non-negotiable protection.'],['Quality','Compliant materials.'],['Transparency','Clear communication.']]},
+    qse:{fr:["Plan d'hygiène et de sécurité par chantier",'EPI fournis et contrôlés','Gestion et évacuation des déchets','Contrôle qualité des matériaux','Formation continue du personnel'],
+         en:['Site-specific safety plan','PPE provided and checked','Waste management','Quality control','Ongoing training']}
+  },
+  services:[
+    {slug:'construction-batiments',icon:'🏢',img:'',fr:{name:'Construction de bâtiments',short:'Du gros œuvre à la finition.',desc:'Construction de bâtiments neufs : logements, bureaux, écoles, centres de santé, entrepôts.',assets:["Études d'exécution",'Terrassement et fondations','Structure béton armé','Second œuvre','Finitions']},en:{name:'Building construction',short:'From structure to finishing.',desc:'New buildings: housing, offices, schools, health centres, warehouses.',assets:['Execution studies','Earthworks and foundations','Reinforced concrete','Secondary works','Finishing']}},
+    {slug:'travaux-publics',icon:'🚧',img:'',fr:{name:'Travaux publics',short:'Routes, voiries, assainissement.',desc:"Ouverture et réhabilitation de routes, voiries urbaines, plateformes.",assets:['Terrassement','Couches de fondation','Ouvrages hydrauliques','Signalisation','Coordination']},en:{name:'Public works',short:'Roads, networks, drainage.',desc:'Road opening and rehabilitation, urban roads, platforms.',assets:['Earthworks','Base courses','Hydraulic structures','Signage','Coordination']}},
+    {slug:'vrd',icon:'🛣️',img:'',fr:{name:'Voirie et réseaux divers (VRD)',short:'Voiries, réseaux, lotissements.',desc:"Voiries, réseaux d'eau potable et d'assainissement, réseaux secs et aménagements.",assets:['Études topographiques','Réseaux humides','Réseaux secs','Voiries','Lotissements']},en:{name:'Roads and utilities (VRD)',short:'Roads, water, drainage.',desc:'Roads, drinking water and drainage networks, dry networks.',assets:['Topographic studies','Wet networks','Dry networks','Roads','Subdivisions']}},
+    {slug:'genie-civil',icon:'🌉',img:'',fr:{name:'Génie civil',short:'Ouvrages d’art, structures.',desc:"Ponts et ouvrages d'art, châteaux d'eau, ouvrages hydrauliques.",assets:['Ouvrages d’art','Châteaux d’eau','Ouvrages hydrauliques','Structures industrielles','Fondations spéciales']},en:{name:'Civil engineering',short:'Bridges, structures.',desc:'Bridges, water towers, hydraulic structures, industrial structures.',assets:['Engineering structures','Water towers','Hydraulic structures','Industrial structures','Special foundations']}},
+    {slug:'rehabilitation',icon:'🏗️',img:'',fr:{name:'Réhabilitation et rénovation',short:'Remise en état.',desc:"Diagnostic, renforcement structurel, mise aux normes, modernisation.",assets:['Diagnostic','Renforcement structurel','Étanchéité','Mise aux normes','Travaux en site occupé']},en:{name:'Refurbishment',short:'Restoration.',desc:'Diagnosis, structural strengthening, compliance upgrades.',assets:['Diagnosis','Structural strengthening','Waterproofing','Compliance','Occupied sites']}}
+  ],
+  projects:[],
+  news:[],
+  articles:[],
+  partners:[],
+  testimonials:[],
+  stats:[],
+  pages:{
+    mentions:{fr:"<h2>1. Éditeur du site</h2><p>CAEER BTP — informations à compléter (raison sociale, RCCM, NIU, siège social).</p><h2>2. Hébergeur</h2><p>À compléter.</p><h2>3. Propriété intellectuelle</h2><p>L'ensemble du site est protégé par le droit d'auteur.</p>",en:"<h2>1. Publisher</h2><p>CAEER BTP — to complete.</p>"},
+    privacy:{fr:"<h2>1. Données collectées</h2><p>Via les formulaires de devis, contact et chatbot.</p><h2>2. Utilisation</h2><p>Uniquement pour traiter votre demande.</p><h2>3. Vos droits</h2><p>Accès, rectification, suppression sur simple demande.</p>",en:"<h2>1. Data collected</h2><p>Via quote, contact and chatbot forms.</p>"},
+    cookies:{fr:"<h2>1. Cookies utilisés</h2><p>Cookies techniques et de mesure d'audience.</p><h2>2. Gestion</h2><p>Vous pouvez modifier vos préférences à tout moment.</p>",en:"<h2>1. Cookies used</h2><p>Technical and analytics cookies.</p>"}
+  }
+};
+
+/* Remplir les données par défaut manquantes */
+DEFAULT_DB.projects = [
+  {slug:'immeuble-bureaux-douala',cat:'construction-batiments',year:2025,place:'Douala',status:'delivered',client:'Groupe privé',img:'',fr:{title:'Immeuble de bureaux R+4',desc:"Construction d'un immeuble de bureaux de quatre niveaux."},en:{title:'R+4 office building',desc:'Construction of a four-storey office building.'}},
+  {slug:'assainissement-yaounde',cat:'vrd',year:2024,place:'Yaoundé',status:'delivered',client:'Collectivité locale',img:'',fr:{title:"Réseau d'assainissement pluvial",desc:"Réhabilitation de 6,2 km de réseau."},en:{title:'Storm drainage network',desc:'Rehabilitation of 6.2 km of network.'}},
+  {slug:'ouvrage-art-douala',cat:'genie-civil',year:2024,place:'Douala',status:'ongoing',client:'Maître d’ouvrage public',img:'',fr:{title:"Ouvrage d'art et voies d'accès",desc:"Construction d'un ouvrage d'art sur 1,8 km."},en:{title:'Engineering structure',desc:'Construction of an engineering structure.'}},
+  {slug:'lotissement-kribi',cat:'vrd',year:2023,place:'Kribi',status:'delivered',client:'Promoteur immobilier',img:'',fr:{title:'Lotissement de 120 parcelles',desc:"Viabilisation complète."},en:{title:'120-plot subdivision',desc:'Full servicing.'}},
+  {slug:'centre-commercial-bafoussam',cat:'construction-batiments',year:2025,place:'Bafoussam',status:'ongoing',client:'Investisseur privé',img:'',fr:{title:'Centre commercial',desc:'4 500 m² avec 60 boutiques.'},en:{title:'Shopping centre',desc:'4,500 m² with 60 shops.'}},
+  {slug:'route-bertoua',cat:'travaux-publics',year:2023,place:'Bertoua',status:'delivered',client:'Maître d’ouvrage public',img:'',fr:{title:'Route rurale de 18 km',desc:"Ouverture et revêtement."},en:{title:'18 km rural road',desc:'Opening and surfacing.'}}
+];
+DEFAULT_DB.news = [
+  {slug:'demarrage-chantier-bafoussam',date:'2026-07-15',img:'',fr:{title:'Démarrage du chantier de Bafoussam',excerpt:"Les travaux de terrassement ont débuté.",body:"<p>CAEER BTP a officiellement démarré les travaux.</p>"},en:{title:'Start of works in Bafoussam',excerpt:'Earthworks have begun.',body:'<p>CAEER BTP has started works.</p>'}},
+  {slug:'livraison-lotissement-kribi',date:'2026-05-28',img:'',fr:{title:'Livraison du lotissement à Kribi',excerpt:"Réceptionné après 14 mois.",body:"<p>Le lotissement a été réceptionné.</p>"},en:{title:'Handover in Kribi',excerpt:'Accepted after 14 months.',body:'<p>The subdivision was handed over.</p>'}},
+  {slug:'securite-chantier-2026',date:'2026-03-10',img:'',fr:{title:'Sécurité : formation des équipes',excerpt:"Formation renforcée prévention des risques.",body:"<p>La sécurité est une priorité constante.</p>"},en:{title:'Safety training',excerpt:'Enhanced risk prevention training.',body:'<p>Safety is a constant priority.</p>'}}
+];
+DEFAULT_DB.articles = [
+  {slug:'choisir-entreprise-btp-cameroun',date:'2026-08-05',author:'Direction CAEER BTP',cat:'Conseils',tags:['Devis','Cameroun'],img:'',fr:{title:'Comment choisir son entreprise de BTP au Cameroun',meta:"Les critères à vérifier.",excerpt:"Références, moyens, assurances : les points à contrôler.",body:"<p>Choisir une entreprise de BTP est une décision structurante.</p><h2>1. Les références</h2><p>Demandez la liste des chantiers réalisés.</p><h2>2. Les moyens</h2><p>Une entreprise qui possède ses propres engins maîtrise mieux ses délais.</p>"},en:{title:'How to choose your construction company in Cameroon',meta:'Criteria to check.',excerpt:'References, equipment, insurance.',body:'<p>Choosing a construction company is a structuring decision.</p>'}},
+  {slug:'vrd-lotissement-etapes',date:'2026-06-18',author:'Service Études',cat:'Technique',tags:['VRD','Lotissement'],img:'',fr:{title:'VRD d’un lotissement : les étapes clés',meta:"Les étapes d'un projet VRD.",excerpt:"De l'étude topographique à la réception.",body:"<p>La viabilisation est un enchaînement technique précis.</p><h2>Étape 1 — Études</h2><p>Relevé topographique.</p><h2>Étape 2 — Terrassement</h2><p>Décapage, remblai.</p>"},en:{title:'Subdivision utilities: key stages',meta:'Stages of a VRD project.',excerpt:'From survey to handover.',body:'<p>Servicing is a precise technical sequence.</p>'}},
+  {slug:'beton-arme-controle-qualite',date:'2026-04-22',author:'Service Technique',cat:'Matériaux',tags:['Béton','Qualité'],img:'',fr:{title:'Béton armé : le contrôle qualité',meta:"Contrôle qualité du béton armé.",excerpt:"Formulation, ferraillage, cure, essais.",body:"<p>Le béton armé est le matériau dominant.</p><h2>Formulation</h2><p>Le dosage doit être adapté.</p>"},en:{title:'Reinforced concrete quality control',meta:'Quality control of reinforced concrete.',excerpt:'Mix design, reinforcement, curing.',body:'<p>Reinforced concrete is the dominant material.</p>'}}
+];
+DEFAULT_DB.partners = ['Ministère des Travaux Publics','Communauté Urbaine','Brasserie du Cameroun SABC','Afriland First Bank','Bureau d’études GEO-CM'];
+DEFAULT_DB.testimonials = [
+  {fr:{text:"Le chantier a été mené dans le respect du calendrier.",author:'Promoteur immobilier',role:'Douala'},en:{text:'The site was run on schedule.',author:'Property developer',role:'Douala'}},
+  {fr:{text:"Une équipe réactive et une communication transparente.",author:'Représentante de collectivité',role:'Yaoundé'},en:{text:'A responsive team.',author:'Local authority',role:'Yaoundé'}},
+  {fr:{text:"Travail en site occupé sans perturber l'activité.",author:'Direction d’établissement',role:'Ebolowa'},en:{text:'Work in occupied site.',author:'Health facility',role:'Ebolowa'}}
+];
+DEFAULT_DB.stats = [
+  {key:'hero.f1',value:12,suffix:'',fr:"Années d'expérience",en:'Years of experience'},
+  {key:'hero.f2',value:85,suffix:'+',fr:'Projets livrés',en:'Projects delivered'},
+  {key:'hero.f3',value:60,suffix:'',fr:'Collaborateurs',en:'Employees'},
+  {key:'hero.f4',value:8,suffix:'',fr:'Régions couvertes',en:'Regions covered'}
+];
+
+/* ---------- BASE DE DONNÉES LOCALE ---------- */
+const STORAGE_KEY='caeer_db_v1';
+let DB = loadDB();
+let LANG='fr', ROUTE={name:'home',param:null};
+
+function loadDB(){
+  try{
+    const raw=localStorage.getItem(STORAGE_KEY);
+    if(!raw) return JSON.parse(JSON.stringify(DEFAULT_DB));
+    const parsed=JSON.parse(raw);
+    // Fusion avec les valeurs par défaut (au cas où de nouveaux champs apparaissent)
+    return deepMerge(JSON.parse(JSON.stringify(DEFAULT_DB)),parsed);
+  }catch(e){ return JSON.parse(JSON.stringify(DEFAULT_DB)); }
+}
+function deepMerge(base,override){
+  if(Array.isArray(override)) return override;
+  if(typeof override!=='object'||override===null) return override!==undefined?override:base;
+  const out=Array.isArray(base)?[]:{...base};
+  for(const k of Object.keys(override)) out[k]=deepMerge(base&&base[k],override[k]);
+  return out;
+}
+function saveDB(){ try{ localStorage.setItem(STORAGE_KEY,JSON.stringify(DB)); }catch(e){ alert('Erreur de sauvegarde : '+e.message); } }
+function resetDB(){ if(confirm('Réinitialiser TOUT le contenu aux valeurs d’origine ? Les modifications seront perdues.')){ DB=JSON.parse(JSON.stringify(DEFAULT_DB)); saveDB(); render(); } }
+
+/* ---------- UTILITAIRES ---------- */
+const $=(s,c=document)=>c.querySelector(s);
+const $$=(s,c=document)=>Array.from(c.querySelectorAll(s));
+function t(k,l=LANG){const d=I18N[l]||I18N.fr;return d[k]!==undefined?d[k]:(I18N.fr[k]!==undefined?I18N.fr[k]:k);}
+function L(o,f){return (o[LANG]&&o[LANG][f])||(o.fr&&o.fr[f])||'';}
+function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
+function fmtDate(iso){const d=new Date(iso);if(isNaN(d))return iso;return d.toLocaleDateString(LANG==='fr'?'fr-FR':'en-GB',{day:'numeric',month:'long',year:'numeric'});}
+function waLink(msg){return 'https://wa.me/'+DB.identity.whatsapp+'?text='+encodeURIComponent(msg||t('contact.wa.msg'));}
+function slugify(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'');}
+function uid(){return 'id_'+Date.now()+'_'+Math.random().toString(36).slice(2,7);}
+function serviceName(slug){const s=DB.services.find(x=>x.slug===slug);return s?L(s,'name'):slug;}
+
+/* ---------- ROUTEUR ---------- */
+const ROUTER={
+  read(){
+    const raw=location.hash.replace(/^#\/?/,'');
+    const parts=raw.split('/').filter(Boolean);
+    let lang='fr';
+    if(parts[0]==='en'||parts[0]==='fr'){lang=parts.shift();}
+    const name=parts.shift()||'home';
+    const param=parts.shift()||null;
+    return {lang,name:name===''?'home':name,param};
+  },
+  href(route,param){return '#/'+LANG+'/'+(route==='home'?'':route)+(param?'/'+param:'');}
+};
+
+/* ---------- COMPOSANTS ---------- */
+function ph(label,cls=''){return `<div class="ph ${cls}"><span>${esc(label)}</span></div>`;}
+function visual(item,label,cls=''){
+  if(item.img)return `<img src="${esc(item.img)}" alt="${esc(label)}" loading="lazy" style="aspect-ratio:16/10;object-fit:cover;width:100%">`;
+  return ph(label,cls);
+}
+function secHead(eyebrow,title,lead,center=false){return `<div class="sec-head ${center?'center':''} reveal"><span class="eyebrow">${esc(eyebrow)}</span><h2>${esc(title)}</h2>${lead?`<p>${esc(lead)}</p>`:''}</div>`;}
+function pageHead(title,lead){return `<section class="pagehead"><div class="wrap"><h1>${esc(title)}</h1>${lead?`<p>${esc(lead)}</p>`:''}</div></section>`;}
+function breadcrumb(items){return `<nav class="crumb wrap">`+items.map((it,i)=>it.href?`<a href="${it.href}">${esc(it.label)}</a>${i<items.length-1?'<span>/</span>':''}`:`<span style="opacity:1;color:var(--ink)">${esc(it.label)}</span>`).join('')+`</nav>`;}
+function quickBar(){return `<div class="quickbar"><div class="wrap"><strong>${t('quick.title')}</strong><div class="qb-links"><a class="qb" href="tel:${DB.identity.phone}">📞 ${t('quick.call')} — ${DB.identity.phoneDisplay}</a><a class="qb" href="${waLink()}" target="_blank">💬 ${t('quick.wa')}</a><a class="qb" href="${ROUTER.href('devis')}">📝 ${t('quick.quote')}</a></div></div></div>`;}
+
+function projectCard(p){
+  const status=p.status==='delivered'?'delivered':'ongoing';
+  return `<article class="card reveal"><a href="${ROUTER.href('realisations',p.slug)}">${visual(p,L(p,'title'))}</a>
+  <div class="card-body"><div class="meta"><span class="badge badge-cat">${esc(serviceName(p.cat))}</span><span class="badge ${status==='delivered'?'badge-done':'badge-live'}">${t('common.'+status)}</span></div>
+  <h3><a href="${ROUTER.href('realisations',p.slug)}">${esc(L(p,'title'))}</a></h3><p>${esc(L(p,'desc'))}</p>
+  <div class="meta" style="margin-top:12px;margin-bottom:0"><span>📍 ${esc(p.place)}</span><span>📅 ${p.year}</span></div>
+  <a class="more" href="${ROUTER.href('realisations',p.slug)}">${t('common.readmore')} →</a></div></article>`;
+}
+function articleCard(a,kind){
+  return `<article class="card reveal"><a href="${ROUTER.href(kind,a.slug)}">${visual(a,t('common.photo'),kind==='actualites'?'gold':'')}</a>
+  <div class="card-body"><div class="meta"><span class="badge badge-cat">${esc(a.cat||t('news.title'))}</span><span>📅 ${fmtDate(a.date)}</span></div>
+  <h3><a href="${ROUTER.href(kind,a.slug)}">${esc(L(a,'title'))}</a></h3><p>${esc(L(a,'excerpt'))}</p>
+  <a class="more" href="${ROUTER.href(kind,a.slug)}">${t('common.readmore')} →</a></div></article>`;
+}
+function shareButtons(url,title){const u=encodeURIComponent(url),tt=encodeURIComponent(title);return `<div class="share"><b>${t('common.share')}</b><a href="https://wa.me/?text=${tt}%20${u}" target="_blank">WA</a><a href="https://www.facebook.com/sharer/sharer.php?u=${u}" target="_blank">f</a><a href="https://www.linkedin.com/sharing/share-offsite/?url=${u}" target="_blank">in</a></div>`;}
+
+/* ---------- VUES ---------- */
+function viewHome(){
+  const h=DB.hero[LANG]||DB.hero.fr;
+  return `<section class="hero"><div class="wrap"><div class="hero-grid">
+    <div><span class="pill">${esc(h.pill)}</span><h1>${h.title}</h1>
+    <div class="hero-slogan">« ${esc(DB.identity.slogan)} »</div>
+    <p class="lead">${esc(h.lead)}</p>
+    <div class="hero-cta"><a class="btn btn-primary" href="${ROUTER.href('devis')}">${t('hero.cta1')}</a><a class="btn btn-ghost" href="${ROUTER.href('realisations')}">${t('hero.cta2')}</a></div>
+    <div class="hero-facts">${DB.stats.map(s=>`<div><b data-count="${s.value}" data-suffix="${s.suffix||''}">0</b><span>${esc(s[LANG]||s.fr)}</span></div>`).join('')}</div></div>
+    <aside class="hero-card"><h3>${t('hero.card.title')}</h3><ul>${(DB.hero.cards[LANG]||DB.hero.cards.fr).map(c=>`<li>${esc(c)}</li>`).join('')}</ul></aside>
+  </div></div></section>
+  ${quickBar()}
+  <section class="block alt"><div class="wrap">${secHead(t('home.services.eyebrow'),t('home.services.title'),t('home.services.lead'),true)}
+    <div class="grid g3">${DB.services.slice(0,3).map(s=>`<article class="card reveal"><a href="${ROUTER.href('services',s.slug)}">${visual(s,L(s,'name'),'gold')}</a><div class="card-body"><h3>${s.icon||''} ${esc(L(s,'name'))}</h3><p>${esc(L(s,'short'))}</p><a class="more" href="${ROUTER.href('services',s.slug)}">${t('common.readmore')} →</a></div></article>`).join('')}</div>
+    <div style="text-align:center;margin-top:38px"><a class="btn btn-blue" href="${ROUTER.href('services')}">${t('home.services.all')}</a></div></div></section>
+  <section class="block"><div class="wrap">${secHead(t('home.stats.eyebrow'),t('home.stats.title'),t('home.stats.lead'),true)}
+    <div class="stats">${DB.stats.map(s=>`<div class="stat reveal"><b data-count="${s.value}" data-suffix="${s.suffix||''}">0</b><span>${esc(s[LANG]||s.fr)}</span></div>`).join('')}</div></div></section>
+  <section class="block alt"><div class="wrap">${secHead(t('home.projects.eyebrow'),t('home.projects.title'),'',true)}
+    <div class="grid g3">${DB.projects.slice(0,3).map(projectCard).join('')}</div>
+    <div style="text-align:center;margin-top:38px"><a class="btn btn-blue" href="${ROUTER.href('realisations')}">${t('home.projects.all')}</a></div></div></section>
+  <section class="block"><div class="wrap">${secHead(t('home.partners.eyebrow'),t('home.partners.title'),'',true)}
+    <div class="logos">${DB.partners.map(p=>`<div class="logo-box reveal">${esc(typeof p==='string'?p:p.name)}</div>`).join('')}</div></div></section>
+  <section class="block alt"><div class="wrap">${secHead(t('home.testi.eyebrow'),t('home.testi.title'),'',true)}
+    <div class="grid g3">${DB.testimonials.map(tm=>`<blockquote class="quote reveal"><p>« ${esc(L(tm,'text'))} »</p><footer>${esc(L(tm,'author'))}<span>${esc(L(tm,'role'))}</span></footer></blockquote>`).join('')}</div></div></section>
+  <section class="block"><div class="wrap">${secHead(t('home.news.eyebrow'),t('home.news.title'),'',true)}
+    <div class="grid g3">${DB.news.slice(0,3).map(n=>articleCard(n,'actualites')).join('')}</div>
+    <div style="text-align:center;margin-top:38px"><a class="btn btn-blue" href="${ROUTER.href('actualites')}">${t('home.news.all')}</a></div></div></section>`;
+}
+
+function viewAbout(){
+  const a=DB.about;
+  return `${pageHead(t('about.title'),esc(L(a,'history').slice(0,120)+'…'))}
+  ${breadcrumb([{label:t('nav.home'),href:ROUTER.href('home')},{label:t('about.title')}])}
+  <section class="block"><div class="wrap two-col"><div class="reveal"><span class="eyebrow">${t('about.history.t')}</span><h2>${t('about.history.t')}</h2><p>${esc(L(a,'history'))}</p></div><div class="reveal">${ph('Chantier — CAEER BTP','gold')}</div></div></section>
+  <section class="block alt"><div class="wrap grid g2"><div class="quote reveal"><h3>🎯 ${t('about.mission.t')}</h3><p>${esc(L(a,'mission'))}</p></div><div class="quote reveal"><h3>🔭 ${t('about.vision.t')}</h3><p>${esc(L(a,'vision'))}</p></div></div></section>
+  <section class="block"><div class="wrap">${secHead('',t('about.values.t'),'',false)}<div class="grid g4">${(a.values[LANG]||a.values.fr).map(v=>`<div class="card reveal"><div class="card-body"><h3>${esc(v[0])}</h3><p>${esc(v[1])}</p></div></div>`).join('')}</div></div></section>
+  <section class="block alt"><div class="wrap grid g2"><div class="reveal"><h2>${t('about.team.t')}</h2><p>${esc(L(a,'team'))}</p></div><div class="reveal"><h2>${t('about.means.t')}</h2><p>${esc(L(a,'means'))}</p></div></div></section>
+  <section class="block"><div class="wrap two-col"><div class="reveal"><h2>${t('about.qse.t')}</h2><ul class="checklist">${(a.qse[LANG]||a.qse.fr).map(q=>`<li>${esc(q)}</li>`).join('')}</ul></div><div class="reveal"><h2>${t('about.certs.t')}</h2><p>${esc(L(a,'certs'))}</p></div></div></section>`;
+}
+
+function viewServices(param){
+  if(param){
+    const s=DB.services.find(x=>x.slug===param);if(!s)return viewNotFound();
+    const others=DB.services.filter(x=>x.slug!==s.slug);
+    return `${pageHead(L(s,'name'),L(s,'short'))}${breadcrumb([{label:t('nav.home'),href:ROUTER.href('home')},{label:t('services.title'),href:ROUTER.href('services')},{label:L(s,'name')}])}
+    <section class="block"><div class="wrap two-col"><div class="reveal"><span class="eyebrow">${t('services.detail')}</span><h2>${esc(L(s,'name'))}</h2><p>${esc(L(s,'desc'))}</p><h3 style="margin-top:1.4em">${t('services.assets')}</h3><ul class="checklist">${(L(s,'assets')||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul><div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn-primary" href="${ROUTER.href('devis')}">${t('nav.quote')}</a><a class="btn btn-outline" href="${ROUTER.href('services')}">${t('common.back')}</a></div></div><div class="reveal">${visual(s,L(s,'name'),'gold')}</div></div></section>
+    <section class="block alt"><div class="wrap">${secHead('',t('services.other'),'',false)}<div class="grid g3">${others.map(o=>`<article class="card reveal"><a href="${ROUTER.href('services',o.slug)}">${visual(o,L(o,'name'),'gold')}</a><div class="card-body"><h3>${o.icon||''} ${esc(L(o,'name'))}</h3><p>${esc(L(o,'short'))}</p><a class="more" href="${ROUTER.href('services',o.slug)}">${t('common.readmore')} →</a></div></article>`).join('')}</div></div></section>`;
+  }
+  return `${pageHead(t('services.title'),t('services.lead'))}${breadcrumb([{label:t('nav.home'),href:ROUTER.href('home')},{label:t('services.title')}])}
+  <section class="block"><div class="wrap"><div class="grid g3">${DB.services.map(s=>`<article class="card reveal"><a href="${ROUTER.href('services',s.slug)}">${visual(s,L(s,'name'),'gold')}</a><div class="card-body"><h3>${s.icon||''} ${esc(L(s,'name'))}</h3><p>${esc(L(s,'short'))}</p><a class="more" href="${ROUTER.href('services',s.slug)}">${t('common.readmore')} →</a></div></article>`).join('')}</div></div></section>${quickBar()}`;
+}
+
+function viewProjects(param){
+  if(param){
+    const p=DB.projects.find(x=>x.slug===param);if(!p)return viewNotFound();
+    const others=DB.projects.filter(x=>x.slug!==p.slug).slice(0,3);
+    const gallery=[L(p,'title')+' — 1',L(p,'title')+' — 2',L(p,'title')+' — 3'];
+    return `${pageHead(L(p,'title'),L(p,'desc'))}${breadcrumb([{label:t('nav.home'),href:ROUTER.href('home')},{label:t('projects.title'),href:ROUTER.href('realisations')},{label:L(p,'title')}])}
+    <section class="block"><div class="wrap two-col"><div class="reveal"><div class="meta"><span class="badge badge-cat">${esc(serviceName(p.cat))}</span><span class="badge ${p.status==='delivered'?'badge-done':'badge-live'}">${t('common.'+p.status)}</span></div>
+    <h2>${esc(L(p,'title'))}</h2><p>${esc(L(p,'desc'))}</p>
+    <table style="width:100%;font-size:.92rem;margin-top:20px"><tbody>
+    <tr><td style="padding:8px 0;color:var(--muted);width:40%">${t('common.client')}</td><td><b>${esc(p.client)}</b></td></tr>
+    <tr><td style="padding:8px 0;color:var(--muted)">${t('common.place')}</td><td><b>${esc(p.place)}</b></td></tr>
+    <tr><td style="padding:8px 0;color:var(--muted)">${t('common.year')}</td><td><b>${p.year}</b></td></tr>
+    <tr><td style="padding:8px 0;color:var(--muted)">${t('common.status')}</td><td><b>${t('common.'+p.status)}</b></td></tr></tbody></table>
+    <div style="margin-top:26px;display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn-primary" href="${ROUTER.href('devis')}">${t('nav.quote')}</a><a class="btn btn-outline" href="${ROUTER.href('realisations')}">${t('common.back')}</a></div></div>
+    <div class="reveal">${gallery.map((g,i)=>`<button class="lb-open" data-cap="${esc(g)}" style="border:0;background:none;padding:0;cursor:zoom-in;display:block;width:100%;margin-bottom:14px">${ph(g,i===0?'gold':'')}</button>`).join('')}<p style="font-size:.82rem;color:var(--muted);text-align:center">${t('common.zoom')}</p></div></div></section>
+    <section class="block alt"><div class="wrap">${secHead('',t('home.projects.title'),'',false)}<div class="grid g3">${others.map(projectCard).join('')}</div></div></section>`;
+  }
+  const cats=[...new Set(DB.projects.map(p=>p.cat))];
+  const years=[...new Set(DB.projects.map(p=>p.year))].sort((a,b)=>b-a);
+  const places=[...new Set(DB.projects.map(p=>p.place))].sort();
+  return `${pageHead(t('projects.title'),t('projects.lead'))}${breadcrumb([{label:t('nav.home'),href:ROUTER.href('home')},{label:t('projects.title')}])}
+  <section class="block"><div class="wrap"><div class="filters">
+    <button class="chip" data-fcat="all" aria-pressed="true">${t('common.all')}</button>
+    ${cats.map(c=>`<button class="chip" data-fcat="${c}" aria-pressed="false">${esc(serviceName(c))}</button>`).join('')}
+    <select class="filter" id="fYear"><option value="all">Année : toutes</option>${years.map(y=>`<option value="${y}">${y}</option>`).join('')}</select>
+    <select class="filter" id="fPlace"><option value="all">Lieu : tous</option>${places.map(p=>`<option value="${esc(p)}">${esc(p)}</option>`).join('')}</select>
+  </div><div class="grid g3" id="projGrid">${DB.projects.map(projectCard).join('')}</div>
+  <p id="projEmpty" style="display:none;text-align:center;color:var(--muted);padding:40px 0">${t('projects.empty')}</p></div></section>`;
+}
+
+function viewRefs(){
+  return `${pageHead(t('refs.title'),t('refs.lead'))}${breadcrumb([{label:t('nav.home'),href:ROUTER.href('home')},{label:t('refs.title')}])}
+  <section class="block"><div class="wrap"><div class="logos">${DB.partners.map(p=>`<div class="logo-box reveal">${esc(typeof p==='string'?p:p.name)}</div>`).join('')}</div></div></section>
+  <section class="block alt"><div class="wrap">${secHead('',t('refs.testi'),'',true)}<div class="grid g3">${DB.testimonials.map(tm=>`<blockquote class="quote reveal"><p>« ${esc(L(tm,'text'))} »</p><footer>${esc(L(tm,'author'))}<span>${esc(L(tm,'role'))}</span></footer></blockquote>`).join('')}</div></div></section>${quickBar()}`;
+}
+
+function viewNews(param){
+  if(param){const n=DB.news.find(x=>x.slug===param);if(!n)return viewNotFound();return articleDetail(n,'actualites');}
+  return `${pageHead(t('news.title'),t('news.lead'))}${breadcrumb([{label:t('nav.home'),href:ROUTER.href('home')},{label:t('news.title')}])}<section class="block"><div class="wrap"><div class="grid g3">${DB.news.map(n=>articleCard(n,'actualites')).join('')}</div></div></section>`;
+}
+
+function viewArticles(param){
+  if(param){const a=DB.articles.find(x=>x.slug===param);if(!a)return viewNotFound();return articleDetail(a,'articles');}
+  const cats=[...new Set(DB.articles.map(a=>a.cat))];
+  return `${pageHead(t('blog.title'),t('blog.lead'))}${breadcrumb([{label:t('nav.home'),href:ROUTER.href('home')},{label:t('blog.title')}])}
+  <section class="block"><div class="wrap"><div class="filters"><button class="chip" data-acat="all" aria-pressed="true">${t('common.all')}</button>${cats.map(c=>`<button class="chip" data-acat="${esc(c)}" aria-pressed="false">${esc(c)}</button>`).join('')}</div>
+  <div class="grid g3" id="artGrid">${DB.articles.map(a=>articleCard(a,'articles')).join('')}</div></div></section>`;
+}
+
+function articleDetail(item,kind){
+  const url=DB.identity.phone+'/'+LANG+'/'+kind+'/'+item.slug;
+  const related=(kind==='articles'?DB.articles:DB.news).filter(x=>x.slug!==item.slug).slice(0,3);
+  return `${pageHead(L(item,'title'),L(item,'excerpt'))}${breadcrumb([{label:t('nav.home'),href:ROUTER.href('home')},{label:kind==='articles'?t('blog.title'):t('news.title'),href:ROUTER.href(kind)},{label:L(item,'title')}])}
+  <section class="block"><div class="wrap article-body"><div class="meta">${item.cat?`<span class="badge badge-cat">${esc(item.cat)}</span>`:''}<span>📅 ${t('common.published')} ${fmtDate(item.date)}</span>${item.author?`<span>✍️ ${t('common.by')} ${esc(item.author)}</span>`:''}</div>
+  ${visual(item,L(item,'title'),kind==='actualites'?'gold':'')}
+  <div style="margin-top:26px">${L(item,'body')}</div>
+  ${item.tags?`<div class="tags">${item.tags.map(tg=>`<span class="tag">#${esc(tg)}</span>`).join('')}</div>`:''}
+  ${shareButtons(url,L(item,'title'))}
+  <div style="margin-top:30px"><a class="btn btn-outline" href="${ROUTER.href(kind)}">${t('common.back')}</a></div></div></section>
+  <section class="block alt"><div class="wrap">${secHead('',t('common.related'),'',false)}<div class="grid g3">${related.map(r=>articleCard(r,kind)).join('')}</div></div></section>`;
+}
+
+function viewQuote(){
+  const a=Math.floor(Math.random()*8)+3,b=Math.floor(Math.random()*8)+2;
+  return `${pageHead(t('quote.title'),t('quote.lead'))}${breadcrumb([{label:t('nav.home'),href:ROUTER.href('home')},{label:t('quote.title')}])}
+  <section class="block"><div class="wrap two-col" style="align-items:start"><div class="reveal"><div id="quoteAlert"></div>
+  <form id="quoteForm" novalidate><div class="form-grid">
+    <div class="field"><label>${t('quote.f.name')} <span class="req">*</span></label><input name="name" required><span class="err">${t('quote.f.required')}</span></div>
+    <div class="field"><label>${t('quote.f.company')}</label><input name="company"></div>
+    <div class="field"><label>${t('quote.f.phone')} <span class="req">*</span></label><input name="phone" type="tel" required><span class="err">${t('quote.f.phoneerr')}</span></div>
+    <div class="field"><label>${t('quote.f.email')} <span class="req">*</span></label><input name="email" type="email" required><span class="err">${t('quote.f.emailerr')}</span></div>
+    <div class="field"><label>${t('quote.f.type')} <span class="req">*</span></label><select name="type" required>${[0,1,2,3,4,5,6].map(i=>`<option value="${i===0?'':t('quote.types.'+i)}">${t('quote.types.'+i)}</option>`).join('')}</select><span class="err">${t('quote.f.required')}</span></div>
+    <div class="field"><label>${t('quote.f.place')} <span class="req">*</span></label><input name="place" required><span class="err">${t('quote.f.required')}</span></div>
+    <div class="field full"><label>${t('quote.f.budget')}</label><input name="budget" placeholder="FCFA"></div>
+    <div class="field full"><label>${t('quote.f.desc')} <span class="req">*</span></label><textarea name="desc" required placeholder="${t('quote.f.desc.ph')}"></textarea><span class="err">${t('quote.f.required')}</span></div>
+    <div class="field full"><label>${t('quote.f.files')}</label><input name="files" type="file" multiple accept=".pdf,image/*"><p style="font-size:.78rem;color:var(--muted)">${t('quote.f.files.hint')||''}</p></div>
+    <div class="hp"><input name="website" tabindex="-1"></div>
+    <div class="field full"><label>${t('quote.captcha')} ${a}+${b} ? <span class="req">*</span></label><div class="captcha"><span>${a}+${b}=</span><input name="captcha" type="number" required></div><span class="err">${t('quote.captcha.err')}</span><input type="hidden" name="captchaExpected" value="${a+b}"></div>
+    <div class="field full"><button class="btn btn-primary btn-block" type="submit">${t('quote.submit')}</button><p style="font-size:.78rem;color:var(--muted);margin-top:10px">${t('quote.side.note')}</p></div>
+  </div></form></div>
+  <aside class="reveal"><div class="panel"><h3>${t('quote.side.t')}</h3><ul class="checklist"><li>${t('quote.side.1')}</li><li>${t('quote.side.2')}</li><li>${t('quote.side.3')}</li><li>${t('quote.side.4')}</li></ul></div>
+  <div class="panel" style="background:var(--navy);color:#cfe0ee;border:0"><h3 style="color:#fff">${t('contact.title')}</h3><p>📞 <a href="tel:${DB.identity.phone}" style="color:#fff">${DB.identity.phoneDisplay}</a></p><p>✉️ <a href="mailto:${DB.identity.email}" style="color:#fff">${DB.identity.email}</a></p><a class="btn btn-primary btn-sm" style="margin-top:8px" target="_blank" href="${waLink()}">💬 ${t('contact.wa')}</a></div></aside></div></section>`;
+}
+
+function viewContact(){
+  return `${pageHead(t('contact.title'),t('contact.lead'))}${breadcrumb([{label:t('nav.home'),href:ROUTER.href('home')},{label:t('contact.title')}])}
+  <section class="block"><div class="wrap"><div class="grid g4" style="margin-bottom:44px">
+    <div class="card reveal"><div class="card-body"><h3>📞 ${t('contact.phone')}</h3><p><a href="tel:${DB.identity.phone}"><b>${DB.identity.phoneDisplay}</b></a></p></div></div>
+    <div class="card reveal"><div class="card-body"><h3>✉️ ${t('contact.email')}</h3><p><a href="mailto:${DB.identity.email}"><b>${DB.identity.email}</b></a></p></div></div>
+    <div class="card reveal"><div class="card-body"><h3>📍 ${t('contact.address')}</h3><p>${esc(DB.identity.address)}</p></div></div>
+    <div class="card reveal"><div class="card-body"><h3>🕐 ${t('contact.hours')}</h3><p style="font-size:.88rem">${esc(DB.identity.hours)}</p></div></div>
+  </div>
+  <div class="two-col" style="align-items:start"><div class="reveal"><h2>${t('contact.form.t')}</h2><div id="contactAlert"></div>
+  <form id="contactForm" novalidate><div class="form-grid">
+    <div class="field"><label>${t('contact.f.name')} <span class="req">*</span></label><input name="name" required><span class="err">${t('quote.f.required')}</span></div>
+    <div class="field"><label>${t('contact.f.email')} <span class="req">*</span></label><input name="email" type="email" required><span class="err">${t('quote.f.emailerr')}</span></div>
+    <div class="field"><label>${t('contact.f.phone')}</label><input name="phone" type="tel"></div>
+    <div class="field"><label>${t('contact.f.subject')} <span class="req">*</span></label><input name="subject" required><span class="err">${t('quote.f.required')}</span></div>
+    <div class="field full"><label>${t('contact.f.msg')} <span class="req">*</span></label><textarea name="msg" required></textarea><span class="err">${t('quote.f.required')}</span></div>
+    <div class="field full"><button class="btn btn-primary" type="submit">${t('contact.submit')}</button></div>
+  </div></form></div>
+  <div class="reveal"><h2>${t('contact.map')}</h2><div class="map-embed"><iframe title="Google Maps" loading="lazy" src="https://www.google.com/maps?q=${encodeURIComponent(DB.identity.mapsQuery)}&output=embed"></iframe></div>
+  <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn-primary" href="${waLink()}" target="_blank">💬 ${t('contact.wa')}</a><a class="btn btn-outline" href="tel:${DB.identity.phone}">📞 ${t('contact.phone')}</a></div></div></div></div></section>`;
+}
+
+function viewLegalPage(kind){
+  const p=DB.pages[kind.replace('mentions-legales','mentions').replace('confidentialite','privacy').replace('cookies','cookies')];
+  const titles={'mentions-legales':{fr:'Mentions légales',en:'Legal notice'},'confidentialite':{fr:'Politique de confidentialité',en:'Privacy policy'},'cookies':{fr:'Gestion des cookies',en:'Cookie management'}};
+  const title=titles[kind]?.[LANG]||kind;
+  return `${pageHead(title)}${breadcrumb([{label:t('nav.home'),href:ROUTER.href('home')},{label:title}])}
+  <section class="block"><div class="wrap article-body">${p?(L(p,'')||p.fr||p):''}<div style="margin-top:28px"><button class="btn btn-outline btn-sm" id="resetCookies">Modifier mes préférences de cookies</button></div></div></section>`;
+}
+
+function viewNotFound(){return `<section class="block"><div class="wrap" style="text-align:center;padding-block:80px"><h1 style="font-size:5rem;color:var(--gold);margin-bottom:0">404</h1><h2>${t('common.notfound')}</h2><a class="btn btn-primary" href="${ROUTER.href('home')}">${t('common.home')}</a></div></section>`;}
+
+/* ==========================================================================
+   BACK-OFFICE COMPLET
+   ========================================================================== */
+const ADMIN={
+  session:sessionStorage.getItem('caeer_admin')==='1',
+  tab:'dash',
+  editing:null,
+
+  render(){
+    if(!this.session)return this.loginView();
+    return `<div class="admin-shell">
+      <aside class="admin-side">
+        <div style="padding:0 22px 20px;border-bottom:1px solid rgba(255,255,255,.12);margin-bottom:16px">
+          <span class="brand-name" style="font-size:1.1rem"><b style="color:#fff">CAEER</b><i>BTP</i></span>
+          <div style="font-size:.62rem;color:var(--gold);font-weight:700;margin-top:2px">Back-office éditable</div>
+        </div>
+        ${[
+          ['dash','📊',t('admin.dash')],
+          ['quotes','📥',t('admin.quotes')],
+          ['messages','💬',t('admin.messages')],
+          ['texts','🎨',t('admin.texts')],
+          ['services','🧱',t('admin.services')],
+          ['projects','🏗️',t('admin.projects')],
+          ['news','📰',t('admin.news')],
+          ['articles','📝',t('admin.articles')],
+          ['partners','🤝',t('admin.partners')],
+          ['testi','⭐',t('admin.testi')],
+          ['stats','🔢',t('admin.stats')],
+          ['legal','📄',t('admin.legal')],
+          ['backup','💾',t('admin.backup')],
+          ['users','👥',t('admin.users')]
+        ].map(([id,ic,label])=>`<button data-tab="${id}" class="${this.tab===id?'active':''}">${ic} ${label}</button>`).join('')}
+        <div style="padding:20px 22px 0;border-top:1px solid rgba(255,255,255,.12);margin-top:20px">
+          <a href="${ROUTER.href('home')}" style="font-size:.85rem;color:#cfe0ee">← ${t('admin.back')||'Retour au site'}</a><br>
+          <button id="adminLogout" style="padding:.7em 0;border:0;color:#ff9c8a;background:none;text-align:left;cursor:pointer;font-weight:700;font-family:inherit;font-size:.85rem">⎋ ${t('admin.logout')}</button>
+        </div>
+      </aside>
+      <div class="admin-main">${this.tabView()}</div>
+    </div>`;
+  },
+
+  loginView(){
+    return `<div class="login-box"><div class="login-logo">
+      <svg viewBox="0 0 90 70" style="width:70px;height:54px"><g fill="#F5B301"><path d="M5 64V36h10v-10h11v38z"/><rect x="10" y="43" width="7" height="7" fill="#fff"/><rect x="40" y="14" width="5" height="50"/><path d="M45 14 78 4v4.5L48 17z"/><path d="M67 19c0 6 4.5 9 8.5 6.5" fill="none" stroke="#F5B301" stroke-width="2.6" stroke-linecap="round"/><path d="M48 64 68 48l20 16h-7l-13-10.5L55 64z"/></g></svg>
+      <div class="brand-name" style="font-size:1.5rem;margin-top:8px"><b>CAEER</b><i>BTP</i></div>
+      <div style="font-size:.7rem;color:var(--blue);font-weight:700;margin-top:2px">${esc(DB.identity.slogan)}</div>
+    </div><h2 style="text-align:center">🔐 ${t('admin.login')}</h2><div id="adminAlert"></div>
+    <form id="adminLogin"><div class="field" style="margin-bottom:14px"><label>${t('admin.user')}</label><input id="a_user" required autocomplete="username"></div>
+    <div class="field" style="margin-bottom:18px"><label>${t('admin.pass')}</label><input id="a_pass" type="password" required autocomplete="current-password"></div>
+    <button class="btn btn-primary btn-block">${t('admin.signin')}</button></form>
+    <p style="font-size:.8rem;color:var(--muted);margin-top:16px;text-align:center">Démo : <b>admin</b> / <b>caeer2026</b></p></div>`;
+  },
+
+  tabView(){
+    switch(this.tab){
+      case 'dash':return this.dash();
+      case 'quotes':return this.quotesList();
+      case 'messages':return this.messagesList();
+      case 'texts':return this.textsForm();
+      case 'services':return this.listServices();
+      case 'projects':return this.listProjects();
+      case 'news':return this.listNews();
+      case 'articles':return this.listArticles();
+      case 'partners':return this.listPartners();
+      case 'testi':return this.listTesti();
+      case 'stats':return this.listStats();
+      case 'legal':return this.legalForm();
+      case 'backup':return this.backupPanel();
+      case 'users':return this.usersInfo();
+    }
+    return '';
+  },
+
+  /* --- Tableau de bord --- */
+  dash(){
+    const q=JSON.parse(localStorage.getItem('caeer_quotes')||'[]');
+    const m=JSON.parse(localStorage.getItem('caeer_messages')||'[]');
+    return `<div class="admin-bar"><h2>${t('admin.dash')}</h2><span class="saveflag">Sauvegarde automatique</span></div>
+    <div class="kpis">
+      <div class="kpi"><b>${q.length}</b><span>${t('admin.kpi.quotes')}</span></div>
+      <div class="kpi"><b>${DB.projects.length}</b><span>${t('admin.kpi.projects')}</span></div>
+      <div class="kpi"><b>${DB.articles.length}</b><span>${t('admin.kpi.articles')}</span></div>
+      <div class="kpi"><b>${DB.news.length}</b><span>${t('admin.kpi.news')}</span></div>
+    </div>
+    <div class="panel"><h3>💾 ${t('admin.backup')}</h3><p>Téléchargez une copie complète de votre site (HTML avec toutes vos données intégrées) ou sauvegardez le contenu en JSON.</p>
+    <button class="btn btn-primary" onclick="ADMIN.downloadSite()">${t('admin.download')}</button>
+    <button class="btn btn-outline" onclick="ADMIN.exportJSON()">${t('admin.export')}</button></div>
+    <div class="panel"><h3>📥 ${t('admin.quotes')} — ${q.length}</h3>${q.length?`<p>Dernières demandes : ${q.slice(-3).reverse().map(x=>esc(x.name)).join(', ')}</p>`:`<p style="color:var(--muted)">${t('admin.noquotes')}</p>`}</div>`;
+  },
+
+  /* --- Liste demandes de devis --- */
+  quotesList(){
+    const q=JSON.parse(localStorage.getItem('caeer_quotes')||'[]');
+    return `<div class="admin-bar"><h2>${t('admin.quotes')}</h2><button class="btn btn-outline btn-sm" onclick="ADMIN.exportQuotes()">⬇ CSV</button></div>
+    <div class="panel">${q.length?`<div style="overflow-x:auto"><table class="tbl"><thead><tr><th>Date</th><th>Nom</th><th>Tél</th><th>Email</th><th>Type</th><th>Lieu</th><th></th></tr></thead><tbody>
+      ${q.slice().reverse().map((x,i)=>`<tr><td>${new Date(x.date).toLocaleString('fr-FR')}</td><td><b>${esc(x.name)}</b></td><td>${esc(x.phone)}</td><td>${esc(x.email)}</td><td>${esc(x.type||'—')}</td><td>${esc(x.place||'—')}</td><td class="tbl-actions"><button class="del" onclick="ADMIN.delQuote('${x.id}')">🗑</button></td></tr>`).join('')}
+    </tbody></table></div>`:`<p style="color:var(--muted)">${t('admin.noquotes')}</p>`}</div>`;
+  },
+  delQuote(id){if(!confirm(t('admin.confirm')))return;const q=JSON.parse(localStorage.getItem('caeer_quotes')||'[]').filter(x=>x.id!==id);localStorage.setItem('caeer_quotes',JSON.stringify(q));render();},
+  exportQuotes(){
+    const q=JSON.parse(localStorage.getItem('caeer_quotes')||'[]');if(!q.length)return alert('Aucune donnée.');
+    const cols=['date','name','company','phone','email','type','place','budget','desc'];
+    const csv=[cols.join(';'),...q.map(x=>cols.map(c=>`"${String(x[c]||'').replace(/"/g,'""')}"`).join(';'))].join('\n');
+    const blob=new Blob(['\uFEFF'+csv],{type:'text/csv'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='devis-'+new Date().toISOString().slice(0,10)+'.csv';a.click();
+  },
+
+  /* --- Messages --- */
+  messagesList(){
+    const m=JSON.parse(localStorage.getItem('caeer_messages')||'[]');
+    return `<div class="admin-bar"><h2>${t('admin.messages')}</h2></div>
+    <div class="panel">${m.length?`<table class="tbl"><thead><tr><th>Date</th><th>Nom</th><th>Email</th><th>Objet</th><th>Message</th><th></th></tr></thead><tbody>
+      ${m.slice().reverse().map(x=>`<tr><td>${new Date(x.date).toLocaleString('fr-FR')}</td><td><b>${esc(x.name)}</b></td><td>${esc(x.email)}</td><td>${esc(x.subject)}</td><td style="max-width:400px">${esc(x.msg).slice(0,150)}…</td><td class="tbl-actions"><button class="del" onclick="ADMIN.delMsg('${x.id}')">🗑</button></td></tr>`).join('')}
+    </tbody></table>`:`<p style="color:var(--muted)">Aucun message.</p>`}</div>`;
+  },
+  delMsg(id){if(!confirm(t('admin.confirm')))return;localStorage.setItem('caeer_messages',JSON.stringify(JSON.parse(localStorage.getItem('caeer_messages')||'[]').filter(x=>x.id!==id)));render();},
+
+  /* --- Textes & identité --- */
+  textsForm(){
+    const id=DB.identity,h=DB.hero;
+    return `<div class="admin-bar"><h2>🎨 ${t('admin.texts')}</h2></div>
+    <form id="textsForm" class="panel">
+      <h3>🏢 Identité de l'entreprise</h3>
+      <div class="form-grid">
+        <div class="field"><label>Nom / Raison sociale</label><input name="id.company" value="${esc(id.company)}"></div>
+        <div class="field"><label>Slogan (FR)</label><input name="id.slogan" value="${esc(id.slogan)}"></div>
+        <div class="field full"><label>Tagline (barre du haut)</label><input name="id.tagline" value="${esc(id.tagline)}"></div>
+        <div class="field"><label>Téléphone (affiché)</label><input name="id.phoneDisplay" value="${esc(id.phoneDisplay)}"></div>
+        <div class="field"><label>Téléphone (lien tel:)</label><input name="id.phone" value="${esc(id.phone)}"></div>
+        <div class="field"><label>E-mail</label><input name="id.email" value="${esc(id.email)}"></div>
+        <div class="field"><label>Numéro WhatsApp</label><input name="id.whatsapp" value="${esc(id.whatsapp)}" placeholder="2376XXXXXXXX"></div>
+        <div class="field"><label>Adresse</label><input name="id.address" value="${esc(id.address)}"></div>
+        <div class="field"><label>Horaires d'ouverture</label><input name="id.hours" value="${esc(id.hours)}"></div>
+        <div class="field full"><label>Localisation Google Maps (recherche)</label><input name="id.mapsQuery" value="${esc(id.mapsQuery)}"></div>
+        <div class="field full"><label>Mentions administratives (RCCM, NIU…)</label><input name="id.legalIds" value="${esc(id.legalIds)}"></div>
+        <div class="field full"><label>Texte pied de page (à propos)</label><textarea name="id.footerAbout">${esc(id.footerAbout)}</textarea></div>
+      </div>
+      <h3 style="margin-top:28px">🎯 Bandeau d'accueil (Hero) — Français</h3>
+      <div class="form-grid">
+        <div class="field full"><label>Badge</label><input name="hero.fr.pill" value="${esc(h.fr.pill)}"></div>
+        <div class="field full"><label>Titre (HTML autorisé : &lt;em&gt;)</label><input name="hero.fr.title" value="${esc(h.fr.title)}"></div>
+        <div class="field full"><label>Texte d'accroche</label><textarea name="hero.fr.lead">${esc(h.fr.lead)}</textarea></div>
+      </div>
+      <h3 style="margin-top:20px">🎯 Bandeau d'accueil — English</h3>
+      <div class="form-grid">
+        <div class="field full"><label>Badge</label><input name="hero.en.pill" value="${esc(h.en.pill)}"></div>
+        <div class="field full"><label>Title</label><input name="hero.en.title" value="${esc(h.en.title)}"></div>
+        <div class="field full"><label>Lead text</label><textarea name="hero.en.lead">${esc(h.en.lead)}</textarea></div>
+      </div>
+      <h3 style="margin-top:20px">✅ 4 arguments (carte hero)</h3>
+      <div class="form-grid">
+        ${[0,1,2,3].map(i=>`<div class="field"><label>Argument ${i+1} (FR)</label><input name="hero.cards.fr.${i}" value="${esc(h.cards.fr[i]||'')}"></div>
+        <div class="field"><label>Argument ${i+1} (EN)</label><input name="hero.cards.en.${i}" value="${esc(h.cards.en[i]||'')}"></div>`).join('')}
+      </div>
+      <div style="margin-top:24px"><button class="btn btn-primary">${t('admin.save')}</button></div>
+    </form>`;
+  },
+
+  /* --- Services --- */
+  listServices(){
+    return `${this.listHeader('services',t('admin.services'))}
+    <div class="panel"><div style="overflow-x:auto"><table class="tbl"><thead><tr><th>Icône</th><th>FR</th><th>EN</th><th>Slug</th><th>Image</th><th></th></tr></thead><tbody>
+      ${DB.services.map((s,i)=>`<tr><td style="font-size:1.5rem">${s.icon||''}</td><td><b>${esc(s.fr.name)}</b></td><td>${esc(s.en.name)}</td><td><code>${esc(s.slug)}</code></td><td>${s.img?'✅':'—'}</td>
+      <td class="tbl-actions"><button onclick="ADMIN.editService(${i})">✏️</button>${i>0?`<button class="move" onclick="ADMIN.moveItem('services',${i},-1)">↑</button>`:''}${i<DB.services.length-1?`<button class="move" onclick="ADMIN.moveItem('services',${i},1)">↓</button>`:''}<button class="del" onclick="ADMIN.delItem('services',${i})">🗑</button></td></tr>`).join('')}
+    </tbody></table></div></div>`;
+  },
+  editService(i){this.openModal(i>=0?'Modifier un service':'Ajouter un service',this.serviceForm(i>=0?DB.services[i]:{slug:'',icon:'',img:'',fr:{name:'',short:'',desc:'',assets:[]},en:{name:'',short:'',desc:'',assets:[]}}),(data)=>{if(i>=0)DB.services[i]=data;else DB.services.push(data);saveDB();render();});},
+  serviceForm(s){
+    return `<div class="form-grid">
+      <div class="field"><label>Icône (emoji)</label><input id="f_icon" value="${esc(s.icon||'')}" placeholder="🏢"></div>
+      <div class="field"><label>Slug (URL)</label><input id="f_slug" value="${esc(s.slug)}" placeholder="construction-batiments"></div>
+      <div class="field full"><label>Nom — FR</label><input id="f_namefr" value="${esc(s.fr.name)}"></div>
+      <div class="field full"><label>Nom — EN</label><input id="f_nameen" value="${esc(s.en.name)}"></div>
+      <div class="field full"><label>Résumé court — FR</label><input id="f_shortfr" value="${esc(s.fr.short)}"></div>
+      <div class="field full"><label>Résumé court — EN</label><input id="f_shorten" value="${esc(s.en.short)}"></div>
+      <div class="field full"><label>Description complète — FR</label><textarea id="f_descfr">${esc(s.fr.desc)}</textarea></div>
+      <div class="field full"><label>Description complète — EN</label><textarea id="f_descen">${esc(s.en.desc)}</textarea></div>
+      <div class="field full"><label>Atouts — FR (1 par ligne)</label><textarea id="f_assetsfr">${(s.fr.assets||[]).join('\n')}</textarea></div>
+      <div class="field full"><label>Atouts — EN (1 par ligne)</label><textarea id="f_assetsen">${(s.en.assets||[]).join('\n')}</textarea></div>
+      <div class="field full"><label>Image</label>${this.imageUploader(s.img,'f_img')}</div>
+    </div>`;
+  },
+  collectServiceForm(){
+    return {
+      slug:slugify($('#f_slug').value)||slugify($('#f_namefr').value),
+      icon:$('#f_icon').value.trim(),
+      img:$('#f_img').value,
+      fr:{name:$('#f_namefr').value.trim(),short:$('#f_shortfr').value.trim(),desc:$('#f_descfr').value.trim(),assets:$('#f_assetsfr').value.split('\n').map(x=>x.trim()).filter(Boolean)},
+      en:{name:$('#f_nameen').value.trim(),short:$('#f_shorten').value.trim(),desc:$('#f_descen').value.trim(),assets:$('#f_assetsen').value.split('\n').map(x=>x.trim()).filter(Boolean)}
+    };
+  },
+
+  /* --- Réalisations --- */
+  listProjects(){
+    return `${this.listHeader('projects',t('admin.projects'))}
+    <div class="panel"><div style="overflow-x:auto"><table class="tbl"><thead><tr><th>Année</th><th>Titre</th><th>Métier</th><th>Lieu</th><th>Statut</th><th>Image</th><th></th></tr></thead><tbody>
+      ${DB.projects.map((p,i)=>`<tr><td>${p.year||''}</td><td><b>${esc(p.fr.title)}</b></td><td>${esc(serviceName(p.cat))}</td><td>${esc(p.place)}</td><td>${t('common.'+p.status)}</td><td>${p.img?'✅':'—'}</td>
+      <td class="tbl-actions"><button onclick="ADMIN.editProject(${i})">✏️</button>${i>0?`<button class="move" onclick="ADMIN.moveItem('projects',${i},-1)">↑</button>`:''}${i<DB.projects.length-1?`<button class="move" onclick="ADMIN.moveItem('projects',${i},1)">↓</button>`:''}<button class="del" onclick="ADMIN.delItem('projects',${i})">🗑</button></td></tr>`).join('')}
+    </tbody></table></div></div>`;
+  },
+  editProject(i){const def={slug:'',cat:'construction-batiments',year:new Date().getFullYear(),place:'',status:'delivered',client:'',img:'',fr:{title:'',desc:''},en:{title:'',desc:''}};this.openModal(i>=0?'Modifier une réalisation':'Ajouter une réalisation',this.projectForm(i>=0?DB.projects[i]:def),(data)=>{if(i>=0)DB.projects[i]=data;else DB.projects.unshift(data);saveDB();render();});},
+  projectForm(p){
+    return `<div class="form-grid">
+      <div class="field full"><label>Titre — FR</label><input id="f_titlefr" value="${esc(p.fr.title)}"></div>
+      <div class="field full"><label>Titre — EN</label><input id="f_titleen" value="${esc(p.en.title)}"></div>
+      <div class="field"><label>Slug (URL)</label><input id="f_slug" value="${esc(p.slug)}" placeholder="mon-projet"></div>
+      <div class="field"><label>Métier</label><select id="f_cat">${DB.services.map(s=>`<option value="${s.slug}" ${p.cat===s.slug?'selected':''}>${esc(L(s,'name'))}</option>`).join('')}</select></div>
+      <div class="field"><label>Année</label><input id="f_year" type="number" value="${p.year||''}"></div>
+      <div class="field"><label>Lieu</label><input id="f_place" value="${esc(p.place)}"></div>
+      <div class="field"><label>Client</label><input id="f_client" value="${esc(p.client)}"></div>
+      <div class="field"><label>Statut</label><select id="f_status"><option value="delivered" ${p.status==='delivered'?'selected':''}>Livré</option><option value="ongoing" ${p.status==='ongoing'?'selected':''}>En cours</option></select></div>
+      <div class="field full"><label>Description — FR</label><textarea id="f_descfr">${esc(p.fr.desc)}</textarea></div>
+      <div class="field full"><label>Description — EN</label><textarea id="f_descen">${esc(p.en.desc)}</textarea></div>
+      <div class="field full"><label>Image de couverture</label>${this.imageUploader(p.img,'f_img')}</div>
+    </div>`;
+  },
+  collectProjectForm(){
+    return {
+      slug:slugify($('#f_slug').value)||slugify($('#f_titlefr').value),
+      cat:$('#f_cat').value,year:Number($('#f_year').value)||new Date().getFullYear(),place:$('#f_place').value.trim(),
+      client:$('#f_client').value.trim(),status:$('#f_status').value,img:$('#f_img').value,
+      fr:{title:$('#f_titlefr').value.trim(),desc:$('#f_descfr').value.trim()},
+      en:{title:$('#f_titleen').value.trim()||$('#f_titlefr').value.trim(),desc:$('#f_descen').value.trim()||$('#f_descfr').value.trim()}
+    };
+  },
+
+  /* --- Actualités --- */
+  listNews(){
+    return `${this.listHeader('news',t('admin.news'))}
+    <div class="panel"><div style="overflow-x:auto"><table class="tbl"><thead><tr><th>Date</th><th>Titre</th><th>Image</th><th></th></tr></thead><tbody>
+      ${DB.news.map((n,i)=>`<tr><td>${n.date}</td><td><b>${esc(n.fr.title)}</b></td><td>${n.img?'✅':'—'}</td>
+      <td class="tbl-actions"><button onclick="ADMIN.editNews(${i})">✏️</button><button class="del" onclick="ADMIN.delItem('news',${i})">🗑</button></td></tr>`).join('')}
+    </tbody></table></div></div>`;
+  },
+  editNews(i){const def={slug:'',date:new Date().toISOString().slice(0,10),img:'',fr:{title:'',excerpt:'',body:''},en:{title:'',excerpt:'',body:''}};this.openModal(i>=0?'Modifier une actualité':'Ajouter une actualité',this.newsForm(i>=0?DB.news[i]:def),(data)=>{if(i>=0)DB.news[i]=data;else DB.news.unshift(data);saveDB();render();});},
+  newsForm(n){
+    return `<div class="form-grid">
+      <div class="field full"><label>Titre — FR</label><input id="f_titlefr" value="${esc(n.fr.title)}"></div>
+      <div class="field full"><label>Titre — EN</label><input id="f_titleen" value="${esc(n.en.title)}"></div>
+      <div class="field"><label>Date</label><input id="f_date" type="date" value="${n.date}"></div>
+      <div class="field"><label>Slug</label><input id="f_slug" value="${esc(n.slug)}"></div>
+      <div class="field full"><label>Résumé — FR</label><textarea id="f_excerptfr">${esc(n.fr.excerpt)}</textarea></div>
+      <div class="field full"><label>Résumé — EN</label><textarea id="f_excerpten">${esc(n.en.excerpt)}</textarea></div>
+      <div class="field full"><label>Contenu — FR</label>${this.editor(n.fr.body,'f_bodyfr')}</div>
+      <div class="field full"><label>Contenu — EN</label>${this.editor(n.en.body,'f_bodyen')}</div>
+      <div class="field full"><label>Image</label>${this.imageUploader(n.img,'f_img')}</div>
+    </div>`;
+  },
+  collectNewsForm(){
+    return {
+      slug:slugify($('#f_slug').value)||slugify($('#f_titlefr').value),
+      date:$('#f_date').value,img:$('#f_img').value,
+      fr:{title:$('#f_titlefr').value.trim(),excerpt:$('#f_excerptfr').value.trim(),body:$('#f_bodyfr').innerHTML},
+      en:{title:$('#f_titleen').value.trim()||$('#f_titlefr').value.trim(),excerpt:$('#f_excerpten').value.trim(),body:$('#f_bodyen').innerHTML}
+    };
+  },
+
+  /* --- Articles --- */
+  listArticles(){
+    return `${this.listHeader('articles',t('admin.articles'))}
+    <div class="panel"><div style="overflow-x:auto"><table class="tbl"><thead><tr><th>Date</th><th>Titre</th><th>Catégorie</th><th>Image</th><th></th></tr></thead><tbody>
+      ${DB.articles.map((a,i)=>`<tr><td>${a.date}</td><td><b>${esc(a.fr.title)}</b></td><td>${esc(a.cat||'')}</td><td>${a.img?'✅':'—'}</td>
+      <td class="tbl-actions"><button onclick="ADMIN.editArticle(${i})">✏️</button><button class="del" onclick="ADMIN.delItem('articles',${i})">🗑</button></td></tr>`).join('')}
+    </tbody></table></div></div>`;
+  },
+  editArticle(i){const def={slug:'',date:new Date().toISOString().slice(0,10),author:'',cat:'',tags:[],img:'',fr:{title:'',meta:'',excerpt:'',body:''},en:{title:'',meta:'',excerpt:'',body:''}};this.openModal(i>=0?'Modifier un article':'Ajouter un article',this.articleForm(i>=0?DB.articles[i]:def),(data)=>{if(i>=0)DB.articles[i]=data;else DB.articles.unshift(data);saveDB();render();});},
+  articleForm(a){
+    return `<div class="form-grid">
+      <div class="field full"><label>Titre — FR</label><input id="f_titlefr" value="${esc(a.fr.title)}"></div>
+      <div class="field full"><label>Titre — EN</label><input id="f_titleen" value="${esc(a.en.title)}"></div>
+      <div class="field"><label>Date</label><input id="f_date" type="date" value="${a.date}"></div>
+      <div class="field"><label>Auteur</label><input id="f_author" value="${esc(a.author||'')}"></div>
+      <div class="field"><label>Catégorie</label><input id="f_cat" value="${esc(a.cat||'')}" placeholder="Conseils"></div>
+      <div class="field"><label>Slug</label><input id="f_slug" value="${esc(a.slug)}"></div>
+      <div class="field full"><label>Mots-clés (séparés par virgule)</label><input id="f_tags" value="${(a.tags||[]).join(', ')}"></div>
+      <div class="field full"><label>Méta description — FR (SEO, 150 car.)</label><input id="f_metafr" value="${esc(a.fr.meta||'')}"></div>
+      <div class="field full"><label>Méta description — EN</label><input id="f_metaen" value="${esc(a.en.meta||'')}"></div>
+      <div class="field full"><label>Résumé — FR</label><textarea id="f_excerptfr">${esc(a.fr.excerpt)}</textarea></div>
+      <div class="field full"><label>Résumé — EN</label><textarea id="f_excerpten">${esc(a.en.excerpt)}</textarea></div>
+      <div class="field full"><label>Contenu — FR</label>${this.editor(a.fr.body,'f_bodyfr')}</div>
+      <div class="field full"><label>Contenu — EN</label>${this.editor(a.en.body,'f_bodyen')}</div>
+      <div class="field full"><label>Image</label>${this.imageUploader(a.img,'f_img')}</div>
+    </div>`;
+  },
+  collectArticleForm(){
+    return {
+      slug:slugify($('#f_slug').value)||slugify($('#f_titlefr').value),
+      date:$('#f_date').value,author:$('#f_author').value.trim(),cat:$('#f_cat').value.trim(),
+      tags:$('#f_tags').value.split(',').map(x=>x.trim()).filter(Boolean),img:$('#f_img').value,
+      fr:{title:$('#f_titlefr').value.trim(),meta:$('#f_metafr').value.trim(),excerpt:$('#f_excerptfr').value.trim(),body:$('#f_bodyfr').innerHTML},
+      en:{title:$('#f_titleen').value.trim()||$('#f_titlefr').value.trim(),meta:$('#f_metaen').value.trim(),excerpt:$('#f_excerpten').value.trim(),body:$('#f_bodyen').innerHTML}
+    };
+  },
+
+  /* --- Partenaires --- */
+  listPartners(){
+    return `${this.listHeader('partners',t('admin.partners'))}
+    <div class="panel">${DB.partners.map((p,i)=>`<div style="display:flex;justify-content:space-between;align-items:center;padding:.7em 1em;background:var(--bg-alt);border:1px solid var(--line);border-radius:9px;margin-bottom:8px">
+      <span><b>${esc(typeof p==='string'?p:p.name)}</b></span>
+      <span class="tbl-actions">${i>0?`<button class="move" onclick="ADMIN.moveItem('partners',${i},-1)">↑</button>`:''}${i<DB.partners.length-1?`<button class="move" onclick="ADMIN.moveItem('partners',${i},1)">↓</button>`:''}<button onclick="ADMIN.editPartner(${i})">✏️</button><button class="del" onclick="ADMIN.delItem('partners',${i})">🗑</button></span>
+    </div>`).join('')}</div>`;
+  },
+  editPartner(i){const cur=DB.partners[i];const val=typeof cur==='string'?cur:(cur.name||'');const name=prompt('Nom du partenaire :',val);if(name===null)return;DB.partners[i]=name.trim();saveDB();render();},
+
+  /* --- Témoignages --- */
+  listTesti(){
+    return `${this.listHeader('testi',t('admin.testi'))}
+    <div class="panel"><div style="overflow-x:auto"><table class="tbl"><thead><tr><th>Auteur</th><th>Texte</th><th></th></tr></thead><tbody>
+      ${DB.testimonials.map((tm,i)=>`<tr><td><b>${esc(tm.fr.author)}</b></td><td>${esc(tm.fr.text).slice(0,100)}…</td>
+      <td class="tbl-actions"><button onclick="ADMIN.editTesti(${i})">✏️</button><button class="del" onclick="ADMIN.delItem('testimonials',${i})">🗑</button></td></tr>`).join('')}
+    </tbody></table></div></div>`;
+  },
+  editTesti(i){const def={fr:{text:'',author:'',role:''},en:{text:'',author:'',role:''}};this.openModal(i>=0?'Modifier un témoignage':'Ajouter un témoignage',this.testiForm(i>=0?DB.testimonials[i]:def),(data)=>{if(i>=0)DB.testimonials[i]=data;else DB.testimonials.push(data);saveDB();render();});},
+  testiForm(tm){
+    return `<div class="form-grid">
+      <div class="field full"><label>Texte — FR</label><textarea id="f_textfr">${esc(tm.fr.text)}</textarea></div>
+      <div class="field full"><label>Texte — EN</label><textarea id="f_texten">${esc(tm.en.text)}</textarea></div>
+      <div class="field"><label>Auteur — FR</label><input id="f_authorfr" value="${esc(tm.fr.author)}"></div>
+      <div class="field"><label>Auteur — EN</label><input id="f_authoren" value="${esc(tm.en.author)}"></div>
+      <div class="field"><label>Rôle/Lieu — FR</label><input id="f_rolefr" value="${esc(tm.fr.role)}"></div>
+      <div class="field"><label>Rôle/Lieu — EN</label><input id="f_roleen" value="${esc(tm.en.role)}"></div>
+    </div>`;
+  },
+  collectTestiForm(){return {
+    fr:{text:$('#f_textfr').value.trim(),author:$('#f_authorfr').value.trim(),role:$('#f_rolefr').value.trim()},
+    en:{text:$('#f_texten').value.trim()||$('#f_textfr').value.trim(),author:$('#f_authoren').value.trim()||$('#f_authorfr').value.trim(),role:$('#f_roleen').value.trim()||$('#f_rolefr').value.trim()}
+  };},
+
+  /* --- Chiffres clés --- */
+  listStats(){
+    return `${this.listHeader('stats',t('admin.stats'))}
+    <div class="panel"><div style="overflow-x:auto"><table class="tbl"><thead><tr><th>Valeur</th><th>Label FR</th><th>Label EN</th><th></th></tr></thead><tbody>
+      ${DB.stats.map((s,i)=>`<tr><td><b>${s.value}${s.suffix||''}</b></td><td>${esc(s.fr)}</td><td>${esc(s.en)}</td>
+      <td class="tbl-actions"><button onclick="ADMIN.editStat(${i})">✏️</button><button class="del" onclick="ADMIN.delItem('stats',${i})">🗑</button></td></tr>`).join('')}
+    </tbody></table></div></div>`;
+  },
+  editStat(i){const def={value:0,suffix:'',fr:'',en:''};this.openModal(i>=0?'Modifier un chiffre':'Ajouter un chiffre',this.statForm(i>=0?DB.stats[i]:def),(data)=>{if(i>=0)DB.stats[i]=data;else DB.stats.push(data);saveDB();render();});},
+  statForm(s){
+    return `<div class="form-grid">
+      <div class="field"><label>Valeur numérique</label><input id="f_value" type="number" value="${s.value}"></div>
+      <div class="field"><label>Suffixe (ex: +)</label><input id="f_suffix" value="${esc(s.suffix||'')}"></div>
+      <div class="field full"><label>Libellé — FR</label><input id="f_fr" value="${esc(s.fr)}"></div>
+      <div class="field full"><label>Libellé — EN</label><input id="f_en" value="${esc(s.en)}"></div>
+    </div>`;
+  },
+  collectStatForm(){return {value:Number($('#f_value').value)||0,suffix:$('#f_suffix').value.trim(),fr:$('#f_fr').value.trim(),en:$('#f_en').value.trim()||$('#f_fr').value.trim()};},
+
+  /* --- Pages légales --- */
+  legalForm(){
+    return `<div class="admin-bar"><h2>📄 ${t('admin.legal')}</h2></div>
+    <form id="legalForm" class="panel">
+      <h3>Mentions légales — FR</h3>
+      ${this.editor(DB.pages.mentions.fr,'f_mentfr')}
+      <h3 style="margin-top:20px">Mentions légales — EN</h3>
+      ${this.editor(DB.pages.mentions.en,'f_menten')}
+      <h3 style="margin-top:20px">Confidentialité — FR</h3>
+      ${this.editor(DB.pages.privacy.fr,'f_privfr')}
+      <h3 style="margin-top:20px">Confidentialité — EN</h3>
+      ${this.editor(DB.pages.privacy.en,'f_priven')}
+      <h3 style="margin-top:20px">Cookies — FR</h3>
+      ${this.editor(DB.pages.cookies.fr,'f_cookfr')}
+      <h3 style="margin-top:20px">Cookies — EN</h3>
+      ${this.editor(DB.pages.cookies.en,'f_cooken')}
+      <div style="margin-top:24px"><button class="btn btn-primary">${t('admin.save')}</button></div>
+    </form>`;
+  },
+
+  /* --- Sauvegarde --- */
+  backupPanel(){
+    return `<div class="admin-bar"><h2>💾 ${t('admin.backup')}</h2></div>
+    <div class="panel"><h3>📥 Télécharger le site final</h3>
+      <p>Génère un fichier HTML <b>avec toutes vos données intégrées</b>, prêt à uploader sur votre hébergeur (ou à ouvrir directement).</p>
+      <button class="btn btn-primary" onclick="ADMIN.downloadSite()">${t('admin.download')}</button></div>
+    <div class="panel"><h3>📤 Sauvegarde JSON</h3>
+      <p>Exportez tout le contenu en un fichier JSON — utile pour sauvegarder, transférer ou importer sur un autre poste.</p>
+      <button class="btn btn-outline" onclick="ADMIN.exportJSON()">${t('admin.export')}</button>
+      <label class="btn btn-outline" style="margin-left:8px;cursor:pointer">${t('admin.import')}<input type="file" accept="application/json" onchange="ADMIN.importJSON(event)" style="display:none"></label>
+    </div>
+    <div class="panel"><h3>⚠️ Zone dangereuse</h3>
+      <p>Réinitialise tout le contenu aux valeurs d'origine. Cette action est irréversible.</p>
+      <button class="btn btn-danger" onclick="ADMIN.resetAll()">${t('admin.reset')}</button></div>`;
+  },
+  exportJSON(){
+    const data=JSON.stringify({db:DB,quotes:JSON.parse(localStorage.getItem('caeer_quotes')||'[]'),messages:JSON.parse(localStorage.getItem('caeer_messages')||'[]')},null,2);
+    const blob=new Blob([data],{type:'application/json'});
+    const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='caeer-sauvegarde-'+new Date().toISOString().slice(0,10)+'.json';a.click();
+  },
+  importJSON(e){
+    const f=e.target.files[0];if(!f)return;
+    const r=new FileReader();
+    r.onload=()=>{try{const j=JSON.parse(r.result);if(j.db)DB=j.db;if(j.quotes)localStorage.setItem('caeer_quotes',JSON.stringify(j.quotes));if(j.messages)localStorage.setItem('caeer_messages',JSON.stringify(j.messages));saveDB();alert('Import réussi.');render();}catch(err){alert('Fichier invalide : '+err.message);}};
+    r.readAsText(f);
+  },
+  resetAll(){resetDB();},
+  downloadSite(){
+    // Reconstruit le HTML en injectant DB dans une balise script
+    const html=`<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(DB.identity.company)} — Site officiel</title><meta name="description" content="${esc(DB.identity.footerAbout).slice(0,160)}"></head><body>
+<script id="caeer-db" type="application/json">${JSON.stringify(DB)}<\/script>
+<script>window.__CAEER_DB__=JSON.parse(document.getElementById('caeer-db').textContent);<\/script>
+<iframe id="site" style="position:fixed;inset:0;width:100%;height:100%;border:0" src="about:blank"><\/iframe>
+<script>
+// Charge le site principal avec les données injectées
+(function(){
+  var blob=new Blob([window.__CAEER_DB__?JSON.stringify({}):''],{type:'text/plain'});
+  // Charge l'index principal et injecte
+  var xhr=new XMLHttpRequest();
+  xhr.open('GET','index.html',false);xhr.send();
+  var html=xhr.responseText;
+  // Remplace le contenu de DEFAULT_DB par les données actuelles
+  var injected='window.__CAEER_INJECTED__='+JSON.stringify(window.__CAEER_DB__)+';';
+  html=html.replace('<script>\\n/* ===','<script>'+injected+'\\n/* ===');
+  document.open();document.write(html);document.close();
+})();
+<\/script>
+</body></html>`;
+    // Version simple : on télécharge le HTML complet actuel avec DB en localStorage
+    // Pour ça on récupère le code source de la page courante et on injecte les données
+    fetch(window.location.href).then(r=>r.text()).then(src=>{
+      const inject='localStorage.setItem("caeer_db_v1",'+JSON.stringify(JSON.stringify(DB))+');';
+      // Injection en début de <script> principal
+      const newSrc=src.replace(/<script>\s*\/\* =+\s*\n\s*CAEER BTP — Site éditable/,'<script>'+inject+'\\n/* ====\\n   CAEER BTP — Site éditable');
+      const blob=new Blob([newSrc],{type:'text/html;charset=utf-8'});
+      const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='index.html';a.click();
+      alert('✅ Fichier "index.html" téléchargé avec toutes vos données. Uploadez-le sur votre hébergeur pour publier.');
+    }).catch(err=>{
+      alert('Erreur : '+err.message+'\\n\\nSolution : utilisez plutôt l’export JSON et contactez votre développeur pour intégration.');
+    });
+  },
+
+  /* --- Utilisateurs (info) --- */
+  usersInfo(){
+    return `<div class="admin-bar"><h2>👥 ${t('admin.users')}</h2></div>
+    <div class="panel"><p><b>Comptes actuels :</b> un seul compte de démonstration (admin / caeer2026).</p>
+    <p style="font-size:.85rem;color:var(--muted);margin-top:16px">⚠️ Cette version HTML est mono-utilisateur. Pour plusieurs comptes (Administrateur / Éditeur) avec permissions, utilisez le back-end PHP/MySQL fourni séparément.</p></div>`;
+  },
+
+  /* --- Utilitaires --- */
+  listHeader(type,title){
+    const addMap={services:'editService',projects:'editProject',news:'editNews',articles:'editArticle',partners:'editPartner',testi:'editTesti',stats:'editStat'};
+    return `<div class="admin-bar"><h2>${title}</h2><button class="btn btn-primary btn-sm" onclick="ADMIN.${addMap[type]}(${-1})">${t('admin.add')}</button></div>`;
+  },
+  moveItem(type,i,dir){const arr=DB[type];const j=i+dir;if(j<0||j>=arr.length)return;[arr[i],arr[j]]=[arr[j],arr[i]];saveDB();render();},
+  delItem(type,i){if(!confirm(t('admin.confirm')))return;DB[type].splice(i,1);saveDB();render();},
+
+  imageUploader(current,id){
+    return `<div class="img-uploader"><input type="file" accept="image/*" onchange="ADMIN.handleImage(event,'${id}')">
+      <div style="font-size:.85rem">${current?'Cliquez pour changer':'📷 Cliquez pour choisir une image'}</div>
+      <input type="hidden" id="${id}" value="${esc(current||'')}">
+      ${current?`<img src="${esc(current)}" alt=""><button type="button" class="btn btn-sm btn-outline" style="margin-top:8px" onclick="event.preventDefault();document.getElementById('${id}').value='';this.parentNode.querySelector('img')?.remove();">${t('admin.remove')}</button>`:''}
+    </div>`;
+  },
+  handleImage(e,id){
+    const f=e.target.files[0];if(!f)return;
+    if(f.size>2*1024*1024){if(!confirm('Image > 2 Mo. Continuer ? Le stockage local peut être saturé.'))return;}
+    const r=new FileReader();
+    r.onload=()=>{$('#'+id).value=r.result;const box=e.target.closest('.img-uploader');const old=box.querySelector('img');if(old)old.remove();const img=document.createElement('img');img.src=r.result;box.appendChild(img);};
+    r.readAsDataURL(f);
+  },
+  editor(html,id){
+    return `<div class="wysiwyg"><div class="toolbar">
+      <button type="button" data-cmd="bold"><b>B</b></button>
+      <button type="button" data-cmd="italic"><i>I</i></button>
+      <button type="button" data-cmd="underline"><u>U</u></button>
+      <button type="button" data-cmd="formatBlock" data-arg="h2">H2</button>
+      <button type="button" data-cmd="formatBlock" data-arg="h3">H3</button>
+      <button type="button" data-cmd="formatBlock" data-arg="p">¶</button>
+      <button type="button" data-cmd="insertUnorderedList">• Liste</button>
+      <button type="button" data-cmd="createLink">🔗</button>
+      <button type="button" data-cmd="removeFormat">✕</button>
+    </div><div class="editor" contenteditable="true" id="${id}">${html||''}</div></div>`;
+  },
+
+  /* --- Modal --- */
+  openModal(title,formHTML,onSave){
+    const overlay=$('#modalOverlay'),modal=$('#modalContent');
+    modal.innerHTML=`<div class="modal-head"><h3>${title}</h3><button type="button" onclick="ADMIN.closeModal()">×</button></div>
+      <div class="modal-body">${formHTML}</div>
+      <div class="modal-foot"><button class="btn btn-outline" type="button" onclick="ADMIN.closeModal()">${t('admin.cancel')}</button><button class="btn btn-primary" type="button" id="modalSave">${t('admin.save')}</button></div>`;
+    overlay.classList.add('open');
+    setTimeout(()=>{
+      // Bind WYSIWYG
+      $$('.wysiwyg .toolbar button').forEach(b=>b.onclick=e=>{e.preventDefault();const cmd=b.dataset.cmd,arg=b.dataset.arg;if(cmd==='createLink'){const u=prompt('URL :');if(u)document.execCommand(cmd,false,u);}else document.execCommand(cmd,false,arg||null);});
+    },50);
+    $('#modalSave').onclick=()=>{
+      try{
+        const data=this['collect'+title.split(' ').pop().charAt(0).toUpperCase()+title.split(' ').pop().slice(1)+'Form']?.();
+        // Fallback selon le type
+        const fn=this.modalCollector;
+        const result=fn?fn():null;
+        if(result){onSave(result);this.closeModal();}
+      }catch(err){alert('Erreur : '+err.message);}
+    };
+    // Stocker le collecteur
+    this.modalCollector=this.getCollector(title);
+  },
+  closeModal(){$('#modalOverlay').classList.remove('open');this.modalCollector=null;},
+  getCollector(title){
+    if(title.includes('service'))return()=>this.collectServiceForm();
+    if(title.includes('réalisation'))return()=>this.collectProjectForm();
+    if(title.includes('actualité'))return()=>this.collectNewsForm();
+    if(title.includes('article'))return()=>this.collectArticleForm();
+    if(title.includes('témoignage'))return()=>this.collectTestiForm();
+    if(title.includes('chiffre'))return()=>this.collectStatForm();
+    return null;
+  }
+};
+
+/* ---------- RENDU PUBLIC ---------- */
+function render(){
+  const main=$('#main');
+  const r=ROUTER.read();
+  LANG=r.lang;
+  ROUTE={name:r.name,param:r.param};
+  // Mettre à jour identité visible
+  document.title=(DB.identity.company)+' — '+(DB.identity.tagline||'');
+  $('#tbTagline').textContent=DB.identity.tagline;
+  $('#tbPhone').textContent=DB.identity.phoneDisplay;
+  $('#tbPhone').href='tel:'+DB.identity.phone;
+  $('#tbEmail').textContent=DB.identity.email;
+  $('#tbEmail').href='mailto:'+DB.identity.email;
+  $('#brandSlogan').textContent=DB.identity.slogan;
+  $('#footSlogan').textContent=DB.identity.slogan;
+  $('#footAbout').textContent=DB.identity.footerAbout;
+  $('#footLegalIds').textContent=DB.identity.legalIds;
+  $('#year').textContent=new Date().getFullYear();
+  $('#footContact').innerHTML=`<li>📍 ${esc(DB.identity.address)}</li><li>📞 <a href="tel:${DB.identity.phone}">${DB.identity.phoneDisplay}</a></li><li>✉️ <a href="mailto:${DB.identity.email}">${DB.identity.email}</a></li><li>💬 <a href="${waLink()}" target="_blank">WhatsApp</a></li><li>🕐 ${esc(DB.identity.hours)}</li>`;
+
+  let html='';
+  switch(ROUTE.name){
+    case 'home':html=viewHome();break;
+    case 'entreprise':html=viewAbout();break;
+    case 'services':html=viewServices(ROUTE.param);break;
+    case 'realisations':html=viewProjects(ROUTE.param);break;
+    case 'references':html=viewRefs();break;
+    case 'actualites':html=viewNews(ROUTE.param);break;
+    case 'articles':html=viewArticles(ROUTE.param);break;
+    case 'devis':html=viewQuote();break;
+    case 'contact':html=viewContact();break;
+    case 'mentions-legales':case 'confidentialite':case 'cookies':html=viewLegalPage(ROUTE.name);break;
+    case 'admin':html=ADMIN.render();break;
+    default:html=viewNotFound();
+  }
+  main.innerHTML=html;
+  syncNav();
+  bindCommon();
+  initCounters();
+  initReveal();
+  if(ROUTE.name==='devis')bindQuoteForm();
+  if(ROUTE.name==='contact')bindContactForm();
+  if(ROUTE.name==='realisations')bindProjectFilters();
+  if(ROUTE.name==='articles')bindArticleFilters();
+  if(ROUTE.name==='admin')bindAdmin();
+  // Bind forms admin
+  const tf=$('#textsForm');if(tf)tf.addEventListener('submit',e=>{e.preventDefault();const fd=new FormData(tf);fd.forEach((v,k)=>{setPath(DB,k,v);});saveDB();alert(t('admin.saved'));render();});
+  const lf=$('#legalForm');if(lf)lf.addEventListener('submit',e=>{e.preventDefault();DB.pages.mentions.fr=$('#f_mentfr').innerHTML;DB.pages.mentions.en=$('#f_menten').innerHTML;DB.pages.privacy.fr=$('#f_privfr').innerHTML;DB.pages.privacy.en=$('#f_priven').innerHTML;DB.pages.cookies.fr=$('#f_cookfr').innerHTML;DB.pages.cookies.en=$('#f_cooken').innerHTML;saveDB();alert(t('admin.saved'));render();});
+  window.scrollTo({top:0,behavior:'auto'});
+}
+function setPath(obj,path,value){
+  const parts=path.split('.');
+  let cur=obj;
+  for(let i=0;i<parts.length-1;i++){const k=isNaN(parts[i])?parts[i]:Number(parts[i]);if(!(k in cur))cur[k]={};cur=cur[k];}
+  const last=isNaN(parts[parts.length-1])?parts[parts.length-1]:Number(parts[parts.length-1]);
+  cur[last]=value;
+}
+
+/* ---------- NAVIGATION ---------- */
+const NAV_ITEMS=[{route:'home',key:'nav.home'},{route:'entreprise',key:'nav.about'},{route:'services',key:'nav.services'},{route:'realisations',key:'nav.projects'},{route:'references',key:'nav.refs'},{route:'actualites',key:'nav.news'},{route:'articles',key:'nav.blog'},{route:'contact',key:'nav.contact'}];
+function syncNav(){
+  $('#navList').innerHTML=NAV_ITEMS.map(i=>`<li><a href="${ROUTER.href(i.route)}" class="${ROUTE.name===i.route?'active':''}">${t(i.key)}</a></li>`).join('')+`<li style="margin-top:6px"><a class="btn btn-primary btn-block" href="${ROUTER.href('devis')}" style="justify-content:center">${t('nav.quote')}</a></li>`;
+  $('#footNav').innerHTML=NAV_ITEMS.map(i=>`<a href="${ROUTER.href(i.route)}">${t(i.key)}</a>`).join('')+`<a href="${ROUTER.href('devis')}">${t('nav.quote')}</a><a href="${ROUTER.href('admin')}">Admin</a>`;
+  $('#footServices').innerHTML=DB.services.map(s=>`<a href="${ROUTER.href('services',s.slug)}">${esc(L(s,'name'))}</a>`).join('');
+  $$('.lang button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===LANG)));
+}
+
+/* ---------- INTERACTIONS ---------- */
+function bindCommon(){
+  const burger=$('#burger'),nav=$('#mainNav');
+  burger.onclick=()=>{const o=nav.classList.toggle('open');burger.setAttribute('aria-expanded',String(o));};
+  $$('#mainNav a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');burger.setAttribute('aria-expanded','false');}));
+  $$('.lang button').forEach(b=>b.onclick=()=>{if(b.dataset.lang===LANG)return;const path=(ROUTE.name==='home'?'':ROUTE.name)+(ROUTE.param?'/'+ROUTE.param:'');location.hash='#/'+b.dataset.lang+'/'+path;setTimeout(render,0);});
+  $$('.lb-open').forEach(btn=>btn.onclick=()=>{const cap=btn.dataset.cap;$('#lbImg').textContent=cap;$('#lbCap').textContent=cap;$('#lightbox').classList.add('open');});
+  const rc=$('#resetCookies');if(rc)rc.onclick=()=>{localStorage.removeItem('caeer_cookies');$('#cookieBar').classList.add('show');};
+}
+function initCounters(){
+  const els=$$('[data-count]');if(!els.length)return;
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(en=>{
+      if(!en.isIntersecting)return;const el=en.target;io.unobserve(el);
+      const target=Number(el.dataset.count),suffix=el.dataset.suffix||'';const dur=1400,start=performance.now();
+      const step=now=>{const p=Math.min((now-start)/dur,1);const eased=1-Math.pow(1-p,3);el.innerHTML=Math.round(target*eased)+(suffix?`<span class="suf">${suffix}</span>`:'');if(p<1)requestAnimationFrame(step);};
+      requestAnimationFrame(step);
+    });
+  },{threshold:.3});
+  els.forEach(el=>io.observe(el));
+}
+function initReveal(){
+  const els=$$('.reveal');if(!els.length)return;
+  if(!('IntersectionObserver' in window)){els.forEach(e=>e.classList.add('in'));return;}
+  const io=new IntersectionObserver((entries)=>{entries.forEach((en,i)=>{if(en.isIntersecting){setTimeout(()=>en.target.classList.add('in'),Math.min(i*60,240));io.unobserve(en.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(el=>io.observe(el));
+}
+
+/* ---------- FORMULAIRES PUBLICS ---------- */
+const FORM={
+  v:{required:x=>String(x||'').trim().length>0,email:x=>/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(String(x||'').trim()),phone:x=>String(x||'').replace(/[\s\-().]/g,'').length>=8},
+  mark(input,ok){const f=input.closest('.field');if(f)f.classList.toggle('invalid',!ok);return ok;}
+};
+function bindQuoteForm(){
+  const form=$('#quoteForm');if(!form)return;
+  form.addEventListener('submit',async e=>{
+    e.preventDefault();const f=form.elements;let ok=true;
+    ok=FORM.mark(f.name,FORM.v.required(f.name.value))&&ok;
+    ok=FORM.mark(f.phone,FORM.v.phone(f.phone.value))&&ok;
+    ok=FORM.mark(f.email,FORM.v.email(f.email.value))&&ok;
+    ok=FORM.mark(f.place,FORM.v.required(f.place.value))&&ok;
+    ok=FORM.mark(f.desc,FORM.v.required(f.desc.value))&&ok;
+    if(f.website&&f.website.value)ok=false;
+    const expected=Number(f.captchaExpected.value),got=Number(f.captcha.value);
+    if(expected!==got){f.captcha.closest('.field').classList.add('invalid');ok=false;}
+    if(!ok)return;
+    const btn=form.querySelector('button[type=submit]');btn.disabled=true;btn.textContent=t('quote.sending');
+    const q=JSON.parse(localStorage.getItem('caeer_quotes')||'[]');
+    q.push({id:uid(),date:new Date().toISOString(),name:f.name.value.trim(),company:f.company.value.trim(),phone:f.phone.value.trim(),email:f.email.value.trim(),type:f.type.value,place:f.place.value.trim(),budget:f.budget.value.trim(),desc:f.desc.value.trim(),files:[...f.files.files].map(x=>x.name)});
+    localStorage.setItem('caeer_quotes',JSON.stringify(q));
+    await new Promise(r=>setTimeout(r,600));
+    $('#quoteAlert').innerHTML=`<div class="alert alert-ok"><b>✅ ${t('quote.ok')}</b><br><br><button class="btn btn-outline btn-sm" onclick="location.reload()">${t('quote.again')}</button></div>`;
+    form.reset();btn.disabled=false;btn.textContent=t('quote.submit');window.scrollTo({top:0,behavior:'smooth'});
+  });
+}
+function bindContactForm(){
+  const form=$('#contactForm');if(!form)return;
+  form.addEventListener('submit',e=>{
+    e.preventDefault();const f=form.elements;let ok=true;
+    ok=FORM.mark(f.name,FORM.v.required(f.name.value))&&ok;
+    ok=FORM.mark(f.email,FORM.v.email(f.email.value))&&ok;
+    ok=FORM.mark(f.subject,FORM.v.required(f.subject.value))&&ok;
+    ok=FORM.mark(f.msg,FORM.v.required(f.msg.value))&&ok;
+    if(!ok)return;
+    const m=JSON.parse(localStorage.getItem('caeer_messages')||'[]');
+    m.push({id:uid(),date:new Date().toISOString(),name:f.name.value.trim(),email:f.email.value.trim(),phone:f.phone.value.trim(),subject:f.subject.value.trim(),msg:f.msg.value.trim()});
+    localStorage.setItem('caeer_messages',JSON.stringify(m));
+    $('#contactAlert').innerHTML=`<div class="alert alert-ok"><b>✅ ${t('contact.ok')}</b></div>`;form.reset();
+  });
+}
+function bindProjectFilters(){
+  let cat='all',year='all',place='all';
+  const apply=()=>{let visible=0;$$('#projGrid .card').forEach((card,idx)=>{const p=DB.projects[idx];const ok=(cat==='all'||p.cat===cat)&&(year==='all'||String(p.year)===year)&&(place==='all'||p.place===place);card.style.display=ok?'':'none';if(ok)visible++;});$('#projEmpty').style.display=visible?'none':'block';};
+  $$('[data-fcat]').forEach(b=>b.onclick=()=>{cat=b.dataset.fcat;$$('[data-fcat]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));apply();});
+  const y=$('#fYear');if(y)y.onchange=()=>{year=y.value;apply();};
+  const p=$('#fPlace');if(p)p.onchange=()=>{place=p.value;apply();};
+}
+function bindArticleFilters(){$$('[data-acat]').forEach(b=>b.onclick=()=>{const cat=b.dataset.acat;$$('[data-acat]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));$$('#artGrid .card').forEach((card,i)=>{const a=DB.articles[i];card.style.display=(cat==='all'||a.cat===cat)?'':'none';});});}
+
+/* ---------- BIND ADMIN ---------- */
+function bindAdmin(){
+  const lf=$('#adminLogin');
+  if(lf){lf.addEventListener('submit',e=>{e.preventDefault();const u=$('#a_user').value.trim(),p=$('#a_pass').value;if(u==='admin'&&p==='caeer2026'){ADMIN.session=true;sessionStorage.setItem('caeer_admin','1');render();}else{$('#adminAlert').innerHTML=`<div class="alert alert-err">${t('admin.err')}</div>`;}});return;}
+  $$('.admin-side button[data-tab]').forEach(b=>b.onclick=()=>{ADMIN.tab=b.dataset.tab;render();});
+  const lo=$('#adminLogout');if(lo)lo.onclick=()=>{ADMIN.session=false;sessionStorage.removeItem('caeer_admin');render();};
+}
+
+/* ---------- CHATBOT ---------- */
+const CHAT={
+  open:false,contactMode:false,
+  kb:[
+    {q:['service','prestation','travaux','faites-vous'],a:()=>`Nos services :<br>${DB.services.map(s=>`• <a href="${ROUTER.href('services',s.slug)}">${esc(L(s,'name'))}</a>`).join('<br>')}`},
+    {q:['devis','prix','coût','combien'],a:()=>`Pour un devis, remplissez notre <a href="${ROUTER.href('devis')}">formulaire</a>. Réponse sous 48 h.`},
+    {q:['zone','où','intervenez','région','cameroun'],a:()=>`Nous intervenons partout au Cameroun, avec une présence à Douala et Yaoundé.`},
+    {q:['contact','téléphone','mail','email','joindre'],a:()=>`📞 <a href="tel:${DB.identity.phone}">${DB.identity.phoneDisplay}</a><br>✉️ <a href="mailto:${DB.identity.email}">${DB.identity.email}</a><br>💬 <a href="${waLink()}" target="_blank">WhatsApp</a>`},
+    {q:['humain','conseiller','parler','appel'],a:()=>`Contactez-nous :<br>📞 <a href="tel:${DB.identity.phone}">${DB.identity.phoneDisplay}</a><br>💬 <a href="${waLink()}" target="_blank">WhatsApp</a>`},
+    {q:['bonjour','salut','hello'],a:()=>`Bonjour 👋 Comment puis-je vous aider ?`},
+    {q:['référence','projet','réalisation'],a:()=>`Voir nos <a href="${ROUTER.href('realisations')}">réalisations</a>.`}
+  ],
+  match(input){
+    const s=input.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+    const pm=s.match(/(\+?\d[\d\s().-]{7,})/);
+    if(this.contactMode&&pm){
+      const name=input.replace(pm[0],'').replace(/[,;]/g,'').trim()||'Visiteur';
+      const l=JSON.parse(localStorage.getItem('caeer_leads')||'[]');l.push({id:uid(),date:new Date().toISOString(),name,phone:pm[0].trim()});localStorage.setItem('caeer_leads',JSON.stringify(l));
+      this.contactMode=false;return 'Merci ! Vos coordonnées ont été transmises.';
+    }
+    for(const item of this.kb){if(item.q.some(k=>s.includes(k)))return item.a();}
+    this.contactMode=true;
+    return `${t('chat.fallback')}<br>📞 <a href="tel:${DB.identity.phone}">${DB.identity.phoneDisplay}</a><br>💬 <a href="${waLink()}" target="_blank">WhatsApp</a><br><br>${t('chat.contact.capture')}`;
+  },
+  addMsg(text,who='bot'){const log=$('#chatLog');const d=document.createElement('div');d.className='msg '+who;d.innerHTML=text;log.appendChild(d);log.scrollTop=log.scrollHeight;},
+  init(){
+    $('#chatLog').innerHTML='';this.addMsg(t('chat.hello'));
+    $('#chatQuick').innerHTML=['Quels services ?','Obtenir un devis','Où intervenez-vous ?','Vos coordonnées ?','Parler à un humain'].map(q=>`<button>${q}</button>`).join('');
+    $$('#chatQuick button').forEach(b=>b.onclick=()=>{this.addMsg(esc(b.textContent),'user');setTimeout(()=>this.addMsg(this.match(b.textContent)),400);});
+  }
+};
+function openChat(){CHAT.open=true;$('#chatPanel').classList.add('open');if(!$('#chatLog').children.length)CHAT.init();}
+function closeChat(){CHAT.open=false;$('#chatPanel').classList.remove('open');}
+
+/* ---------- INIT ---------- */
+function initApp(){
+  render();
+  $('#year').textContent=new Date().getFullYear();
+  $('#chatFab').onclick=()=>CHAT.open?closeChat():openChat();
+  $('#chatClose').onclick=closeChat;
+  $('#chatForm').addEventListener('submit',e=>{e.preventDefault();const i=$('#chatInput'),v=i.value.trim();if(!v)return;CHAT.addMsg(esc(v),'user');i.value='';setTimeout(()=>CHAT.addMsg(CHAT.match(v)),450);});
+  $('#lbClose').onclick=()=>$('#lightbox').classList.remove('open');
+  $('#lightbox').onclick=e=>{if(e.target.id==='lightbox')$('#lightbox').classList.remove('open');};
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){$('#lightbox').classList.remove('open');closeChat();$('#modalOverlay').classList.remove('open');}});
+  if(localStorage.getItem('caeer_cookies')===null)setTimeout(()=>$('#cookieBar').classList.add('show'),1200);
+  $('#ckAccept').onclick=()=>{localStorage.setItem('caeer_cookies','accepted');$('#cookieBar').classList.remove('show');};
+  $('#ckRefuse').onclick=()=>{localStorage.setItem('caeer_cookies','refused');$('#cookieBar').classList.remove('show');};
+  window.addEventListener('hashchange',render);
+  $('#modalOverlay').addEventListener('click',e=>{if(e.target.id==='modalOverlay')ADMIN.closeModal();});
+}
+document.addEventListener('DOMContentLoaded',initApp);
+</script>
+</body>
+</html>
